@@ -10,21 +10,10 @@
 }
 
 @import "fonts";
+@import "nullstyle.scss";
+@import "menu_style";
 
-body{
-  font-size: 25px;
-  display: flex;
-}
-
-span{
-  font-size: 30px;
-  @media (max-width: 767px){
-    font-size: 20px;
-  }
-}
-div{
-  font-size: 30px;
-  @media (max-width: 767px){
-    font-size: 20px;
-  }
+body {
+  background-color: #4B4AEF;
+  font-family: "NunitoSans-Black", "Arial", sans-serif;
 }
