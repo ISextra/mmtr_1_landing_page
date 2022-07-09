@@ -1,22 +1,38 @@
-.wrapper{
-  height: 100%;
-  overflow: hidden;
-  min-height: 100%;
-  padding: 10px;
-}
 .menu{
+  justify-self: flex-start;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 0;
+  width: 100%;
+}
+@media (max-width: 479px) {
+  .menu_item_middle{
+    font-size: 20px;
+  }
+  .menu_item_end_2{
+    font-size: 20px;
+    margin: 0px 0px 0px 5px;
+  }
+}
+@media (max-width: 767px) {
+
+}
+@media (max-width: 962px) {
+
 }
 .menu_row_1{
   display: flex;
   align-items: flex-end;
 }
 .menu_row_2{
+  padding: 5px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .menu_row_3{
+  padding: 5px 0;
   display: flex;
 }
 .menu_item_start_1{
@@ -28,43 +44,43 @@
 }
 .menu_img_start{
   margin:0;
-  vertical-align: center;
 }
 .menu_item_start_2{
   font-family: 'Poppins-Black';
   color: #fff;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 30px;
   line-height: 30px;
 }
 .menu_item_middle{
   background-color: transparent;
-  border-radius:10px;
-  margin-right: 15px;
-  font-family: 'NunitoSans-Black';
+  font-family: 'NunitoSans';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 24px;
   line-height: 126.9%;
   /* or 30px */
   letter-spacing: 0.02em;
   color: #fff;
 }
+.menu_item_middle_container{
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
 .menu_img_middle{
   float:right;
   margin:0;
 }
 
-img.menu_img_middle{
-  vertical-align: middle;
-}
 
 .menu_item_end_1{
   background-color: transparent;
-  font-family: 'NunitoSans-Black';
+  font-family: 'NunitoSans';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 24px;
   line-height: 126.9%;
   /* or 30px */
@@ -74,12 +90,12 @@ img.menu_img_middle{
 .menu_item_end_2{
   top:50%;
   padding:15px;
-  margin: 0px 0px 0px 10px;
+  margin: 0px 0px 0px 45px;
   background: #FFCA1D;
   border-radius: 10px;
-  font-family: 'NunitoSans-Black';
+  font-family: 'NunitoSans';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 24px;
   line-height: 126.9%;
   /* or 30px */
