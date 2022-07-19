@@ -1,0 +1,50 @@
+.chapter-5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+}
+
+.chapter-5__content{
+  height: 80%;
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background: antiquewhite;
+}
+
+.chapter-5__top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chapter-5__top_text-1{
+   font-family: 'NunitoSans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 147.4%;
+  /* or 71px */
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #FFCA1D;
+}
+
+.chapter-5__top_text-2{
+  font-family: 'NunitoSans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 147.4%;
+  /* or 71px */
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #565656;
+}

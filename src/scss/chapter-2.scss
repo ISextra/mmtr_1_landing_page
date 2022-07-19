@@ -1,25 +1,25 @@
-.page-2{
+.chapter-2{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 977px;
+  height: 10%;
 }
 
-.page-2_content{
+.chapter-2__content{
   height: 70%;
   width: 90%;
 
   display: flex;
   flex-direction: column;
 }
-.page-2_content_top{
+.chapter-2__content_top{
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px;
 }
-.page-2_content_top_left{
+.chapter-2__content_top_left{
   display: flex;
   flex-direction: column;
   position: relative;
@@ -29,7 +29,7 @@
   width: 1000px;
   height: 100%;
 }
-.page-2_content_top_left_line{
+.chapter-2__content_top_left_line{
   top: 0px;
   left: 0px;
   position: absolute;
@@ -38,7 +38,7 @@
   height: 5px;
   border-radius: 30px;
 }
-.page-2_content_top_left_text{
+.chapter-2__content_top_left_text{
   margin-top: 10px;
   font-family: 'NunitoSans';
   font-style: normal;
@@ -49,14 +49,14 @@
   letter-spacing: 0.02em;
   color: #515151;
 }
-.page-2_content_top_right{
+.chapter-2__content_top_right{
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.page-2_content_middle{
+.chapter-2__content_middle{
   height: 100%;
   width: 100%;
   display: flex;
@@ -71,21 +71,21 @@
   /* identical to box height, or 71px */
   letter-spacing: 0.02em;
 }
-.page-2_middle_text-1{
+.chapter-2__middle_text-1{
   color: #565656
 }
 
-.page-2_middle_text-2{
+.chapter-2__middle_text-2{
   color: #FFCA1D
 }
-.page-2_content_bottom{
+.chapter-2__content_bottom{
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.page-2_content_bottom_icon-1{
+.chapter-2__content_bottom_icon-1{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,7 +95,7 @@
   background: #FED369;
   border-radius: 26px;
 }
-.page-2_content_bottom_icon-2{
+.chapter-2__content_bottom_icon-2{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,7 +106,7 @@
   background: #3ADAD9;
   border-radius: 20px;
 }
-.page-2_content_bottom_icon-3{
+.chapter-2__content_bottom_icon-3{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,7 +117,7 @@
   background: #FD9B79;
   border-radius: 20px;
 }
-.page-2_content_bottom_block{
+.chapter-2__content_bottom_block{
   width: 100%;
   height: 100%;
   display: flex;
@@ -125,7 +125,7 @@
   justify-content: center;
   align-items: center;
 }
-.page-2_content_bottom_text-1{
+.chapter-2__content_bottom_text-1{
   width: 250px;
   height: 35px;
 
@@ -144,7 +144,7 @@
   color: #2B3377;
 }
 
-.page-2_content_bottom_text-2{
+.chapter-2__content_bottom_text-2{
   width: 437px;
   height: 102px;
 

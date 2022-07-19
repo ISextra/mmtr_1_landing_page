@@ -1,60 +1,164 @@
+.chapter-1__content_menu{
+  justify-self: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 0;
+  width: 100%;
+}
+@media (max-width: 479px) {
+  .menu_item_middle{
+    font-size: 20px;
+  }
+  .menu_item_end_2{
+    font-size: 20px;
+    margin: 0px 0px 0px 5px;
+  }
+}
+@media (max-width: 767px) {
+
+}
+@media (max-width: 962px) {
+
+}
+.chapter-1__content_menu_row-1{
+  display: flex;
+  align-items: flex-end;
+}
+.chapter-1__content_menu_row-2{
+  padding: 5px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.chapter-1__content_menu_row-3{
+  padding: 5px 0;
+  display: flex;
+}
+.chapter-1__content_menu_icon{
+  background-color: #FFCA1D;
+  cursor: default;
+  margin-right: 15px;
+  padding: 10px;
+  border-radius: 30px;
+}
+.menu_img_start{
+  margin:0;
+}
+.chapter-1__content_menu_TeamFlow{
+  font-family: 'Poppins';
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+}
+.chapter-1__content_menu_middle_text{
+  background-color: transparent;
+  font-family: 'NunitoSans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 126.9%;
+  /* or 30px */
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.chapter-1__content_menu_middle{
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.chapter-1__content_menu_middle_img{
+  float:right;
+  margin:0;
+}
 
 
-.page-1{
+.chapter-1__content_menu_Login{
+  background-color: transparent;
+  font-family: 'NunitoSans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 126.9%;
+  /* or 30px */
+  color: #757575;
+}
+
+.chapter-1__content_menu_Sing-Up{
+  top:50%;
+  padding:15px;
+  margin: 0px 0px 0px 45px;
+  background: #FFCA1D;
+  border-radius: 10px;
+  font-family: 'NunitoSans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 126.9%;
+  /* or 30px */
+
+  color: black;
+}
+
+.chapter-1{
   display: flex;
   flex-direction: column;
-  height: 977px;
-  width: 100%;
-  left: 16px;
-  top: 16px;
+  height: 10%;
+  width: 1920px;
 }
-.page-1_content {
+.chapter-1__content {
   display: flex;
   flex-direction: column;
   align-self: center;
-  height: 90%;
+  height: 70%;
   width: 90%;
 }
-.page-1-block_img1, .page-1-block_img2{
+.chapter-1__img1{
   position: absolute;
   z-index: -3;
   width: 1300px;
   height: 977px;
 }
-.page-1-block_img2{
-  width: 1888px;
+.chapter-1__img2{
+  position: absolute;
+  width: 1903px;
+  height: 977px;
+  background: #FAFAFF;
   z-index: -4;
 }
 
-.page-1-block_img3{
+.chapter-1__img3{
   position: absolute;
   width: 1356.93px;
   height: 494.53px;
   z-index: -2;
 }
-.page-1-block_img4{
+.chapter-1__img4{
   position: absolute;
   width: 1356.93px;
   height: 494.53px;
   z-index: -1;
 }
-.page-1-block_img5{
+.chapter-1__img5{
   position: absolute;
   width: 1185px;
   height: 357px;
-  left: -298px;
-  top: 645px;
+  left: -20%;
+  top: 70%;
   z-index: -2;
 }
-.page-1-block_img6{
+.chapter-1__img6{
   position: absolute;
   width: 1185px;
   height: 273.36px;
-  left: -173px;
-  top: 821.12px;
+  left: -11%;
+  top: 90%;
   z-index: -1;
 }
-.page-1-block{
+.chapter-1__content_block{
   width: 100%;
   position: relative;
   display: flex;
@@ -65,11 +169,11 @@
 
   margin-top: 100px;
 }
-.page-1-block_left{
+.chapter-1__content_block_left{
   display: flex;
   flex-direction: column;
 }
-.left_welcome{
+.chapter-1__content_block_left_Welcome-to-TeamFlow{
   position: relative;
   display: flex;
   align-items: center;
@@ -87,7 +191,7 @@
   color: #606060;
 }
 
-.page-1_fig_1{
+.chapter-1__content_block_left_Welcome-to-TeamFlow_fig-1{
   position: absolute;
   width: 22px;
   height: 22px;
@@ -95,7 +199,7 @@
   top: -47px;
 }
 
-.left_work{
+.chapter-1__content_block_left_Work-the-way{
   width: 677px;
   font-weight: 800;
   font-size: 64px;
@@ -106,28 +210,28 @@
 
   color: #FFFFFF;
 }
-.page-1_fig_2{
+.chapter-1__content_block_left_Work-the-way_fig-2{
   position: absolute;
   width: 40px;
   height: 40px;
   left: 580px;
   top: 165px;
 }
-.page-1_fig_3{
+.chapter-1__content_block_left_Work-the-way_fig-3{
   position: absolute;
   width: 35px;
   height: 35px;
   left: 600px;
   top: 185px;
 }
-.left_line{
+.chapter-1__content_block_left_line{
   background-color: #3ADAD9;
   width: 65px;
   height: 5px;
   border-radius: 30px;
   margin: 40px 0px;
 }
-.left_create{
+.chapter-1__content_block_left_Create{
   position: relative;
   width: 625px;
 
@@ -141,14 +245,14 @@
 
   color: #FFFFFF;
 }
-.page-1_fig_4{
+.chapter-1__content_block_left_Create_fig-4{
   position: absolute;
   width: 33px;
   height: 33px;
   left: 490px;
   top: 69px;
 }
-.left_get-started{
+.chapter-1__content_block_left_Get-Started{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,11 +269,11 @@
   /* identical to box height, or 33px */
   color: #2C2C2C;
 }
-.page-1-block_right{
+.chapter-1__content_block_right{
   display: flex;
   flex-direction: column;
 }
-.right_lucy{
+.chapter-1__content_block_right_lucy{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -177,7 +281,7 @@
 
   margin-bottom: 22.91px;
 }
-.right_lucy_avatar{
+.chapter-1__content_block_right_lucy_avatar{
   position: relative;
   display: flex;
   align-items: center;
@@ -193,7 +297,7 @@
   margin-right: 57.32px;
 }
 
-.page-fig_5{
+.chapter-1__content_block_right_lucy_avatar_fig-5{
   position: absolute;
   width: 50px;
   height: 50px;
@@ -201,7 +305,7 @@
   top: -20px;
 }
 
-.addit_name{
+.chapter-1__content_block_right_addit-name{
   position: absolute;
   display: flex;
   align-items: center;
@@ -216,7 +320,7 @@
   font-style: normal;
   font-weight: 700;
 }
-.lucy_name{
+.chapter-1__content_block_right_lucy_name{
   width: 241.58px;
   height: 67.3px;
   left: -131.26px;
@@ -228,7 +332,7 @@
   color: #494949;
 }
 
-.mark_name{
+.chapter-1__content_block_right_mark_name{
   width: 91.65px;
   height: 26.19px;
   left: 141.81px;
@@ -239,13 +343,13 @@
   /* or 15px */
   color: #279E73;
 }
-.avatar_dash{
+.chapter-1__content_block_right_avatar_dash{
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-.lusy_dash{
+.chapter-1__content_block_right_lucy_dash{
   width: 310.6px;
   height: 310.6px;
 }
@@ -255,7 +359,7 @@
   height: 223px;
 }
 
-.right_comment{
+.chapter-1__content_block_right_comment{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -269,7 +373,7 @@
 
   margin-right: 61.24px;
 }
-.comment_top{
+.chapter-1__content_block_right_comment_top{
   width: 297.71px;
   height: 50px;
   display: flex;
@@ -281,10 +385,10 @@
   font-size: 18.7534px;
   line-height: 126.9%;
 }
-.comment_name{
+.chapter-1__content_block_right_comment_top_name{
   align-self: flex-end;
 }
-.comment_status{
+.chapter-1__content_block_right_comment_top_status{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -306,7 +410,7 @@
   background: #FD9B79;
 }
 
-.comment_middle{
+.chapter-1__content_block_right_comment_middle{
   width: 297.71px;
   height: 26.77px;
   margin: 10px 0;
@@ -318,20 +422,20 @@
   line-height: 126.9%;
   color: #2B3377;
 }
-.comment_bottom{
+.chapter-1__content_block_right_comment_bottom{
   width: 297.71px;
   display: flex;
   align-items: center;
   justify-content: start;
 }
 
-.right_mark{
+.chapter-1__content_block_right_mark{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap-reverse;
 }
-.right_mark_avatar{
+.chapter-1__content_block_right_mark_avatar{
     position: relative;
     display: flex;
     align-items: center;
@@ -343,12 +447,4 @@
     background-size: contain;
     box-shadow: 0px 75.0135px 121.897px rgba(0, 0, 0, 0.05);
     border-radius: 50%;
-}
-
-.mark_name{
-  width: 91.65px;
-  height: 26.19px;
-
-  background: #FAFAFA;
-  border-radius: 19.8012px;
 }
