@@ -12,8 +12,140 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  background: antiquewhite;
 }
 
 .chapter-7__content_left{
+  align-self: center;
+}
 
+.chapter-7__content_left_top{
+  width: 548px;
+  height: 59px;
+
+  font-family: 'NunitoSans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 147.4%;
+  /* or 59px */
+
+  letter-spacing: 0.02em;
+
+  color: #4A4A4A;
+}
+.chapter-7__content_left_line{
+  background-color: #686DF1;
+  width: 65px;
+  height: 5px;
+  border-radius: 30px;
+  margin: 20px 0px;
+}
+.chapter-7__content_left_bottom{
+  width: 650px;
+  height: 190px;
+
+  font-family: 'NunitoSans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  /* or 158% */
+
+  letter-spacing: 0.005em;
+
+  color: #575757;
+}
+
+.chapter-7__content_right{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+  width: 580px;
+  height: 580px;
+}
+.chapter-7__content_right_ellipse-small{
+  box-sizing: border-box;
+  width: 440px;
+  height: 440px;
+
+  border-radius: 50%;
+  border: 3px dashed #DDDDED;
+}
+.chapter-7__content_right_ellipse-big{
+  position: absolute;
+  box-sizing: border-box;
+  width: 580px;
+  height: 580px;
+
+  border-radius: 50%;
+  border: 3px dashed #DDDDED;
+}
+
+.chapter-7__content_right_big-circle-orange{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  left: -5%;
+  top: 15%;
+
+  background: #F3C758;
+}
+.chapter-7__content_right_big-circle-orange_content{
+
+}
+
+.chapter-7__content_right_big-circle-orange_small-circle-1{
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 55%;
+  top: 20%;
+
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+}
+.chapter-7__content_right_big-circle-orange_small-circle-2{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 20%;
+  top: 60%;
+
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.chapter-7__content_right_big-circle-red{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  left: 60%;
+  top: 60%;
+
+  background: #FD9B79;
+}
+.chapter-7__content_right_big-circle-blue{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  left: 60%;
+  top: -15%;
+
+  background: #3ADAD9;
 }
