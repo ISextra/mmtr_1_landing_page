@@ -10,7 +10,7 @@
   width: 90%;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -27,6 +27,46 @@
   border-radius: 50%;
 }
 
+.chapter-6__content_left_ellipse-1{
+  position: absolute;
+  z-index: 1;
+}
+.chapter-6__content_left_ellipse-2{
+  position: absolute;
+}
+.chapter-6__content_left_circle-blue{
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  left: 12%;
+  top: 12%;
+
+  background: #64B7F3;
+}
+.chapter-6__content_left_circle-red{
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  left: 22%;
+  top: 90%;
+
+  background: #EC7B4A;
+}
+.chapter-6__content_left_circle-pink{
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  left: 98%;
+  top: 50%;
+
+  background: #F3648F;
+}
 
 .chapter-6__content_right{
   align-self: center;
