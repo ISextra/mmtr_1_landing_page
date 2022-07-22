@@ -4,107 +4,93 @@
   align-items: center;
   width: 100%;
   height: 10%;
-}
-.chapter-6__content{
-  height: 80%;
-  width: 80%;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.chapter-6__content-left {
-  width: 680px;
-  height: 680px;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-}
-
-.chapter-6__content-left-Andrea{
-  border-radius: 50%;
-}
-
-.chapter-6__content-left-ellipse-1{
-  position: absolute;
-  z-index: 1;
-}
-.chapter-6__content-left-ellipse-2{
-  position: absolute;
-}
-.chapter-6__content-left-circle-blue{
-  position: absolute;
-  z-index: 1;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  left: 12%;
-  top: 12%;
-
-  background: #64B7F3;
-}
-.chapter-6__content-left-circle-red{
-  position: absolute;
-  z-index: 1;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  left: 22%;
-  top: 90%;
-
-  background: #EC7B4A;
-}
-.chapter-6__content-left-circle-pink{
-  position: absolute;
-  z-index: 1;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  left: 98%;
-  top: 50%;
-
-  background: #F3648F;
-}
-
-.chapter-6__content-right{
-  align-self: center;
-}
-.chapter-6__content-right-top{
-  width: 548px;
-  height: 59px;
-
-  font-family: 'NunitoSans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 147.4%;
-  /* or 59px */
-
-  letter-spacing: 0.02em;
-
-  color: #4A4A4A;
-}
-.chapter-6__content-right-line{
-  background-color: #FED369;
-  width: 65px;
-  height: 5px;
-  border-radius: 30px;
-  margin: 20px 0px;
-}
-.chapter-6__content-right-bottom{
-  width: 676px;
-  height: 190px;
-
-  font-family: 'NunitoSans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 38px;
-  /* or 158% */
-
-  letter-spacing: 0.005em;
-
-  color: #575757;
+  &__content {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-left {
+      width: 680px;
+      height: 680px;
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      &-Andrea {
+        border-radius: 50%;
+      }
+      &-ellipse-1 {
+        position: absolute;
+        z-index: 1;
+      }
+      &-ellipse-2 {
+        position: absolute;
+      }
+      &-circle-blue {
+        position: absolute;
+        z-index: 1;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        left: 12%;
+        top: 12%;
+        background: #64B7F3;
+      }
+      &-circle-red {
+        position: absolute;
+        z-index: 1;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        left: 22%;
+        top: 90%;
+        background: #EC7B4A;
+      }
+      &-circle-pink {
+        position: absolute;
+        z-index: 1;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        left: 98%;
+        top: 50%;
+        background: #F3648F;
+      }
+    }
+    &-right {
+      align-self: center;
+      &-top {
+        width: 548px;
+        height: 59px;
+        font-family: 'NunitoSans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 147.4%;
+        /* or 59px */
+        letter-spacing: 0.02em;
+        color: #4A4A4A;
+      }
+      &-line {
+        background-color: #FED369;
+        width: 65px;
+        height: 5px;
+        border-radius: 30px;
+        margin: 20px 0px;
+      }
+      &-bottom {
+        width: 676px;
+        height: 190px;
+        font-family: 'NunitoSans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 38px;
+        /* or 158% */
+        letter-spacing: 0.005em;
+        color: #575757;
+      }
+    }
+  }
 }
