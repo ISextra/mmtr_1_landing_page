@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.chapter-6__content_left{
+.chapter-6__content-left {
   width: 680px;
   height: 680px;
   display: flex;
@@ -23,18 +23,18 @@
   justify-content: center;
 }
 
-.chapter-6__content_left_Andrea{
+.chapter-6__content-left-Andrea{
   border-radius: 50%;
 }
 
-.chapter-6__content_left_ellipse-1{
+.chapter-6__content-left-ellipse-1{
   position: absolute;
   z-index: 1;
 }
-.chapter-6__content_left_ellipse-2{
+.chapter-6__content-left-ellipse-2{
   position: absolute;
 }
-.chapter-6__content_left_circle-blue{
+.chapter-6__content-left-circle-blue{
   position: absolute;
   z-index: 1;
   border-radius: 50%;
@@ -45,7 +45,7 @@
 
   background: #64B7F3;
 }
-.chapter-6__content_left_circle-red{
+.chapter-6__content-left-circle-red{
   position: absolute;
   z-index: 1;
   border-radius: 50%;
@@ -56,7 +56,7 @@
 
   background: #EC7B4A;
 }
-.chapter-6__content_left_circle-pink{
+.chapter-6__content-left-circle-pink{
   position: absolute;
   z-index: 1;
   border-radius: 50%;
@@ -68,10 +68,10 @@
   background: #F3648F;
 }
 
-.chapter-6__content_right{
+.chapter-6__content-right{
   align-self: center;
 }
-.chapter-6__content_right_top{
+.chapter-6__content-right-top{
   width: 548px;
   height: 59px;
 
@@ -86,14 +86,14 @@
 
   color: #4A4A4A;
 }
-.chapter-6__content_right_line{
+.chapter-6__content-right-line{
   background-color: #FED369;
   width: 65px;
   height: 5px;
   border-radius: 30px;
   margin: 20px 0px;
 }
-.chapter-6__content_right_bottom{
+.chapter-6__content-right-bottom{
   width: 676px;
   height: 190px;
 
