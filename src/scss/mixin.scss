@@ -1,0 +1,34 @@
+@import "colors";
+@mixin textblock($topw,$toph,$linec,$bottomw,$bottomh){
+  &-top {
+    width: $topw;
+    height: $toph;
+    font-family: 'NunitoSans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 147.4%;
+    /* or 59px */
+    letter-spacing: 0.02em;
+    color: $gray-8;
+  }
+  &-line {
+    background-color: $linec;
+    width: 65px;
+    height: 5px;
+    border-radius: 30px;
+    margin: 20px 0px;
+  }
+  &-bottom {
+    width: $bottomw;
+    height: $bottomh;
+    font-family: 'NunitoSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    /* or 158% */
+    letter-spacing: 0.005em;
+    color: $gray-5;
+  }
+}

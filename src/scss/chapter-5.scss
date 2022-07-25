@@ -1,3 +1,4 @@
+@import "colors";
 .chapter-5{
   display: flex;
   justify-content: center;
@@ -27,7 +28,7 @@
       /* or 71px */
       text-align: center;
       letter-spacing: 0.02em;
-      color: #FFCA1D;
+      color: $orange-1;
     }
     &-text-2 {
       font-family: 'NunitoSans';
@@ -38,7 +39,7 @@
       /* or 71px */
       text-align: start;
       letter-spacing: 0.02em;
-      color: #565656;
+      color: $gray-5;
     }
   }
   &__middle {
@@ -59,7 +60,7 @@
       height: 16px;
       left: 20%;
       top: 20%;
-      background: #0061FF;
+      background: $blue-5;
     }
   }
   &__bottom {
@@ -72,7 +73,7 @@
     &-view-all {
       width: 230px;
       height: 70px;
-      background: #FFCA1D;
+      background: $orange-1;
       border-radius: 10px;
       display: flex;
       align-items: center;
@@ -84,7 +85,7 @@
         font-size: 26px;
         line-height: 126.9%;
         /* identical to box height, or 33px */
-        color: #2C2C2C;
+        color: $black-2;
       }
     }
     &-circle {
@@ -95,7 +96,7 @@
       height: 20px;
       left: 70%;
       top: 50%;
-      background: #0061FF;
+      background: $blue-5;
     }
   }
 }

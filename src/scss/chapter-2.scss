@@ -1,3 +1,4 @@
+@import "colors";
 .chapter-2 {
   display: flex;
   justify-content: center;
@@ -26,7 +27,7 @@
           top: 0px;
           left: 0px;
           position: absolute;
-          background-color: #FFCA1D;
+          background-color: $orange-1;
           width: 65px;
           height: 5px;
           border-radius: 30px;
@@ -40,7 +41,7 @@
           line-height: 44px;
           /* or 147% */
           letter-spacing: 0.02em;
-          color: #515151;
+          color: $gray-4;
         }
       }
       &-right {
@@ -65,10 +66,10 @@
       /* identical to box height, or 71px */
       letter-spacing: 0.02em;
       &-text-1{
-        color: #565656
+        color:$gray-5;
       }
       &-text-2{
-        color: #FFCA1D
+        color: $orange-1;
       }
     }
     &-bottom {
@@ -83,7 +84,7 @@
         align-items: center;
         width: 102px;
         height: 102px;
-        background: #FED369;
+        background: $yellow-1;
         border-radius: 26px;
       }
       &-icon-2 {
@@ -92,7 +93,7 @@
         align-items: center;
         width: 102px;
         height: 102px;
-        background: #3ADAD9;
+        background: $blue-1;
         border-radius: 20px;
       }
       &-icon-3 {
@@ -101,7 +102,7 @@
         align-items: center;
         width: 102px;
         height: 102px;
-        background: #FD9B79;
+        background: $red-1;
         border-radius: 20px;
       }
       &-block {
@@ -124,7 +125,7 @@
         /* or 35px */
         text-align: center;
         letter-spacing: 0.02em;
-        color: #2B3377;
+        color: $blue-2;
       }
       &-text-2 {
         width: 437px;
@@ -137,7 +138,7 @@
         /* or 170% */
         text-align: center;
         letter-spacing: 0.02em;
-        color: #585858;
+        color: $gray-5;
       }
     }
   }

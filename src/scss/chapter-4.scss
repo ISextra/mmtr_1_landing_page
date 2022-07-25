@@ -1,3 +1,5 @@
+@import "colors";
+@import "mixin";
 .chapter-4{
   display: flex;
   justify-content: center;
@@ -10,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #FAFAFF;
+    background: $white-2;
   }
   &__content {
     height: 80%;
@@ -23,37 +25,7 @@
       align-self: center;
       margin-right: 110px;
       margin-bottom: 5%;
-      &-top {
-        width: 347px;
-        height: 59px;
-        font-family: 'NunitoSans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 147.4%;
-        /* or 59px */
-        letter-spacing: 0.02em;
-        color: #4A4A4A;
-      }
-      &-line {
-        background-color: #FED369;
-        width: 65px;
-        height: 5px;
-        border-radius: 30px;
-        margin: 20px 0px;
-      }
-      &-bottom {
-        width: 672px;
-        height: 190px;
-        font-family: 'NunitoSans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 38px;
-        /* or 158% */
-        letter-spacing: 0.005em;
-        color: #575757;
-      }
+      @include textblock(347px,59px,$yellow-1,672px,190px);
     }
     &-right {
       width: 664px;
@@ -71,7 +43,7 @@
         left: 40%;
         top:25%;
         border-radius: 50%;
-        background: #4B4AEF;
+        background: $purple-1;
       }
       &-circle-2 {
         position: absolute;
@@ -80,7 +52,7 @@
         top: 40%;
         left: 35%;
         border-radius: 50%;
-        background: #55FF8F;
+        background: $green-2;
         transform: matrix(-1, 0, 0, 1, 0, 0);
       }
       &-circle-3 {
@@ -90,7 +62,7 @@
         left: 95%;
         top: 30%;
         border-radius: 50%;
-        background: #5EE2FF;
+        background: $blue-6;
         transform: matrix(-1, 0, 0, 1, 0, 0);
       }
       &-circle-4 {
@@ -100,7 +72,7 @@
         left: 85%;
         top: 90%;
         border-radius: 50%;
-        background: #FFED90;
+        background: $yellow-1;
         transform: matrix(-1, 0, 0, 1, 0, 0);
       }
       &-img {
@@ -117,7 +89,7 @@
         height: 104px;
         left: 15%;
         top: 25%;
-        background: #FFFFFF;
+        background: $white-3;
         box-shadow: 0px 89.761px 145.862px rgba(0, 0, 0, 0.05);
         border-radius: 19.1456px;
       }

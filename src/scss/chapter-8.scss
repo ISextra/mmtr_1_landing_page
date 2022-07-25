@@ -1,17 +1,157 @@
+@import "colors";
+@import "mixin";
 .chapter-8{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 10%;
-}
-.chapter-8__content {
-  height: 80%;
-  width: 80%;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  background: antiquewhite;
+  &__content {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      &-backfig-1 {
+        position: absolute;
+        width: 247.28px;
+        height: 428.12px;
+        left: -3%;
+        top: -2%;
+        z-index: -1;
+        background: $blue-1;
+      }
+      &-backfig-2 {
+        position: absolute;
+        width: 105.98px;
+        height: 190.09px;
+        left: 80%;
+        top: 60%;
+        z-index: -1;
+        background: $yellow-1;
+      }
+      &-commentbox {
+        position: absolute;
+        width: 440px;
+        height: 230px;
+        top: 80%;
+        left: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        &-comment {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 440px;
+          height: 200px;
+          background: $white-3;
+          box-shadow: 0px 89.761px 145.862px rgba(0, 0, 0, 0.05);
+          border-radius: 19.1456px;
+          &-top {
+            font-family: 'NunitoSans';
+            width: 348.22px;
+            height: 115px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20.1864px;
+            line-height: 160.69%;
+            /* or 32px */
+            letter-spacing: 0.02em;
+            color:$blue-8;
+          }
+          &-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 348.22px;
+            &-left {
+              font-family: 'NunitoSans';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 20.1864px;
+              line-height: 160.69%;
+              /* identical to box height, or 32px */
+              letter-spacing: 0.02em;
+              color: #2D3150;
+            }
+            &-right {
+              font-family: 'NunitoSans';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20.1864px;
+              line-height: 160.69%;
+              /* identical to box height, or 32px */
+              letter-spacing: 0.02em;
+              color: $blue-9;
+            }
+          }
+        }
+        &-dotsbox {
+          position: absolute;
+          top: 95%;
+          left: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          z-index: -1;
+          &-top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          &-middle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          &-bottom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          &-dot {
+            width: 5.05px;
+            height: 5.05px;
+            margin-right: 10px;
+            margin-bottom: 6.5px;
+            border-radius: 50%;
+            background: $white-5;
+          }
+        }
+      }
+    }
+    &-right {
+      @include textblock(548px,59px,$orange-1,650px,190px);
+      &-readmore {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 230px;
+        height: 70px;
+        background: $yellow-1;
+        border-radius: 10px;
+        margin-top: 32px;
+        &-text {
+          position: absolute;
+          font-family: 'NunitoSans';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 26px;
+          line-height: 126.9%;
+          /* identical to box height, or 33px */
+          color:$black-2;
+        }
+      }
+    }
+  }
 }

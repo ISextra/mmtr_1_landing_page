@@ -1,3 +1,5 @@
+@import "colors";
+@import "mixin";
 .chapter-3 {
   display: flex;
   justify-content: center;
@@ -24,10 +26,10 @@
       /* identical to box height, or 71px */
       letter-spacing: 0.02em;
       &-text-1{
-        color: #565656;
+        color: $gray-5;
       }
       &-text-2{
-        color: #FFCA1D;
+        color: $orange-1;
       }
     }
     &-bottom {
@@ -68,7 +70,7 @@
             height: 80px;
             top: 55%;
             left: 25%;
-            background: rgba(253, 155, 121, 0.15);
+            background: $gray-6;
             border-radius: 50%;
           }
           &-circle-1 {
@@ -77,7 +79,7 @@
             height: 14px;
             left: 20%;
             top: 40%;
-            background: #ECC84A;
+            background: $yellow-2;
             border-radius: 50%;
           }
           &-circle-2 {
@@ -86,7 +88,7 @@
             height: 12px;
             left: 55%;
             top: 75%;
-            background: #3ED37A;
+            background: $green-2;
             border-radius: 50%;
           }
         }
@@ -111,7 +113,7 @@
             height: 80px;
             top: 65%;
             left: 75%;
-            background: #EDF1FF;
+            background: $white-4;
             border-radius: 50%;
           }
           &-features-2 {
@@ -123,7 +125,7 @@
             height: 80px;
             top: 10%;
             left: 30%;
-            background:  #EDF1FF;
+            background:  $white-4;
             border-radius: 50%;
           }
           &-circle-1 {
@@ -132,7 +134,7 @@
             height: 8px;
             left: 80%;
             top: 20%;
-            background: #EC7B4A;
+            background: $red-2;
             border-radius: 50%;
           }
         }
@@ -160,7 +162,7 @@
             height: 80px;
             top: 15%;
             left: 85%;
-            background: rgba(58, 218, 217, 0.15);
+            background: $green-3;
             border-radius: 50%;
           }
           &-circle-1 {
@@ -170,7 +172,7 @@
             left: 0%;
             top: 80%;
 
-            background: #64B7F3;
+            background: $blue-3;
             border-radius: 50%;
           }
           &-circle-2 {
@@ -179,7 +181,7 @@
             height: 8px;
             left: 10%;
             top: 10%;
-            background: #4A81EC;
+            background: $blue-4;
             border-radius: 50%;
           }
           &-circle-3 {
@@ -188,7 +190,7 @@
             height: 18px;
             left: 105%;
             top: 50%;
-            background: #F3648F;
+            background: $pink-1;
             border-radius: 50%;
           }
         }
@@ -206,9 +208,9 @@
           height: 65px;
           left: 60%;
           top: 80%;
-          background: #FFFFFF;
+          background: $white-3;
           /* shdw-01 */
-          box-shadow: 4px 5px 20px rgba(74, 105, 165, 0.16);
+          box-shadow: 4px 5px 20px $gray-7;
           border-radius: 10px;
         }
         &-boostyourwork-left {
@@ -217,11 +219,11 @@
         &-boostyourwork-right{
           font-family: 'Poppins';
           font-style: normal;
-          font-weight: 400;
+          font-weight: 500;
           font-size: 14px;
           line-height: 21px;
           /* identical to box height */
-          color: #2F4BDF;
+          color: $blue-5;
         }
       }
       &-right {
@@ -231,37 +233,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        &-top {
-          width: 610px;
-          height: 119px;
-          font-family: 'NunitoSans';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 40px;
-          line-height: 147.4%;
-          /* or 59px */
-          letter-spacing: 0.02em;
-          color: #4A4A4A;
-        }
-        &-line {
-          background-color: #FED369;
-          width: 65px;
-          height: 5px;
-          border-radius: 30px;
-          margin: 20px 0px;
-        }
-        &-bottom {
-          width: 685px;
-          height: 152px;
-          font-family: 'NunitoSans';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 24px;
-          line-height: 38px;
-          /* or 158% */
-          letter-spacing: 0.005em;
-          color: #575757;
-        }
+        @include textblock(610px,119px,$yellow-1,685px,152px);
       }
     }
   }
@@ -275,7 +247,7 @@
     height: 148px;
     top: -250%;
     left: -550%;
-    background: #FFFFFF;
+    background: $white-3;
     box-shadow: 0px 89.761px 145.862px rgba(0, 0, 0, 0.1);
     border-radius: 19.1456px;
     &-content {
@@ -302,8 +274,8 @@
         top: 80%;
         left: 80%;
         z-index: 3;
-        background: #41A86A;
-        border: 1.5px solid #FFFFFF;
+        background: $green-4;
+        border: 1.5px solid $white-3;
         border-radius: 50%;
       }
       &-right {
@@ -315,11 +287,11 @@
       &-right-top {
         font-family: 'Poppins';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 14px;
         line-height: 21px;
         /* identical to box height */
-        color: #38C73E;
+        color: $green-5;
       }
       &-right-bottom {
         display: flex;
@@ -341,16 +313,16 @@
         line-height: 24px;
         /* identical to box height */
         letter-spacing: 0.02em;
-        color: #3B4EB3;
+        color: $blue-5;
       }
       &-left-bottom {
         font-family: 'Poppins';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 14px;
         line-height: 21px;
         /* identical to box height */
-        color: #7F86AE;
+        color: $gray-9;
       }
       &-right {
         display: flex;
@@ -358,11 +330,11 @@
         align-items: center;
         width: 105px;
         height: 35px;
-        background: #FFCA1D;
+        background: $orange-1;
         border-radius: 8px;
         font-family: 'Poppins';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 14px;
         line-height: 21px;
         /* identical to box height */
