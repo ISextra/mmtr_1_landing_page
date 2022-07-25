@@ -11,13 +11,11 @@
     &-left {
       align-self: center;
       margin-right: 110px;
-      margin-bottom: 5%;
       @include textblock(347px,59px,$yellow-1,672px,190px);
     }
     &-right {
       width: 664px;
       height: 658px;
-      top: -5%;
       display: flex;
       align-self: flex-start;
       justify-content: center;

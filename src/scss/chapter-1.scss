@@ -52,12 +52,11 @@
     &-menu {
       justify-self: flex-start;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
       width: 100%;
       &-row-1 {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         &-icon {
           background-color: $orange-1;
           cursor: default;
@@ -79,7 +78,6 @@
       }
       &-row-2 {
         display: flex;
-        flex-wrap: wrap;
         padding: 0px 225px 0 273px;
         &-middle {
           display: flex;
@@ -121,6 +119,7 @@
           border-radius: 10px;
           font-family: 'NunitoSans';
           font-style: normal;
+          white-space: nowrap;
           font-weight: 700;
           font-size: 24px;
           line-height: 126.9%;

@@ -5,13 +5,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 10%;
+  margin-bottom: 150px;
   &__content {
-    height: 80%;
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     &-left {
       width: 680px;
       height: 680px;
@@ -19,15 +14,25 @@
       position: relative;
       align-items: center;
       justify-content: center;
+      margin-right: 180px;
       &-Andrea {
         border-radius: 50%;
+        background: url("../img/chapter-6/andrea.png");
+        width: 582px;
+        height: 582px;
       }
       &-ellipse-1 {
         position: absolute;
+        background: url("../img/chapter-6/Ellipse 98.png");
+        width: 500px;
+        height: 500px;
         z-index: 1;
       }
       &-ellipse-2 {
         position: absolute;
+        background: url("../img/chapter-6/Ellipse 97.png");
+        width: 680px;
+        height: 680px;
       }
       &-circle-blue {
         position: absolute;
