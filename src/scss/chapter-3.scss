@@ -43,7 +43,6 @@
       justify-content: center;
       align-items: center;
       margin-right: 163px;
-
       &-ellipse-1 {
         display: flex;
         justify-content: center;
@@ -54,6 +53,7 @@
         z-index: -1;
 
         &-icon-2 {
+          background: url("../img/chapter-3/icon-2.png");
           position: absolute;
           width: 56px;
           height: 56px;
@@ -94,21 +94,19 @@
           border-radius: 50%;
         }
       }
-
       &-ellipse-2 {
         position: absolute;
         width: 504px;
         height: 504px;
         z-index: -1;
-
         &-icon-1 {
+          background: url("../img/chapter-3/icon-3.png");
           position: absolute;
           width: 65px;
           height: 65px;
           top: 75%;
           left: 25%;
         }
-
         &-features-1 {
           position: absolute;
           display: flex;
@@ -121,7 +119,6 @@
           background: $white-4;
           border-radius: 50%;
         }
-
         &-features-2 {
           position: absolute;
           display: flex;
@@ -134,7 +131,6 @@
           background: $white-4;
           border-radius: 50%;
         }
-
         &-circle-1 {
           position: absolute;
           width: 8px;
@@ -145,7 +141,6 @@
           border-radius: 50%;
         }
       }
-
       &-ellipse-3 {
         display: flex;
         justify-content: center;
@@ -153,15 +148,14 @@
         width: 678px;
         height: 678px;
         z-index: -1;
-
         &-icon-1 {
+          background: url("../img/chapter-3/icon-4.png ");
           position: absolute;
           width: 80px;
           height: 80px;
           top: 20%;
           left: 0%;
         }
-
         &-features-1 {
           position: absolute;
           display: flex;
@@ -174,18 +168,15 @@
           background: $green-3;
           border-radius: 50%;
         }
-
         &-circle-1 {
           position: absolute;
           width: 20px;
           height: 20px;
           left: 0%;
           top: 80%;
-
           background: $blue-3;
           border-radius: 50%;
         }
-
         &-circle-2 {
           position: absolute;
           width: 8px;
@@ -281,6 +272,7 @@
       display: flex;
       justify-content: space-between;
       &-left {
+        background: url("../img/chapter-3/icon-2.png");
         position: relative;
         width: 51px;
         height: 51px;
