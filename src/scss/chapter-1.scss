@@ -1,14 +1,11 @@
 @import "colors";
+@import "mixin";
 .chapter-1{
   display: flex;
   flex-direction: column;
   width: 100%;
-  &__img1 {
-    position: absolute;
-    z-index: -3;
-    width: 1300px;
-    height: 977px;
-  }
+  background: url("../img/chapter-1/Rectangle 36.png");
+  background-repeat: no-repeat;
   &__img2 {
     position: absolute;
     width: 100%;
@@ -20,13 +17,13 @@
     position: absolute;
     width: 1356.93px;
     height: 494.53px;
-    z-index: -2;
+    z-index: 0;
   }
   &__img4 {
     position: absolute;
     width: 1356.93px;
     height: 494.53px;
-    z-index: -1;
+    z-index: 1;
   }
   &__img5 {
     position: absolute;
@@ -34,7 +31,7 @@
     height: 357px;
     left: -31px;
     top: 723px;
-    z-index: -2;
+    z-index: 0;
   }
   &__img6 {
     position: absolute;
@@ -42,18 +39,40 @@
     height: 273.36px;
     left: -161px;
     top: 856px;
-    z-index: -1;
+    z-index: 1;
   }
 
   &__content {
     display: flex;
     flex-direction: column;
     padding: 76px 190px 342px 190px;
+    @include respond-to(320px){
+      padding: 30px 10px 30px 10px;
+    }
     &-menu {
       justify-self: flex-start;
       display: flex;
       justify-content: center;
-      width: 100%;
+      @include respond-to(320px){
+        justify-content: start;
+      }
+      &-burger {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        height: 38px;
+        width: 38px;
+        background: $white-3;
+        border-radius: 20%;
+        @include respond-to(320px){
+          display: flex;
+        }
+        &-img {
+          background: url("../img/chapter-1/icons8-menu-rounded-30.png");
+          width: 30px;
+          height: 30px;
+        }
+      }
       &-row-1 {
         display: flex;
         align-items: center;
@@ -79,6 +98,9 @@
       &-row-2 {
         display: flex;
         padding: 0px 225px 0 273px;
+        @include respond-to(320px){
+          display: none;
+        }
         &-middle {
           display: flex;
           align-items: center;
@@ -102,6 +124,9 @@
         padding: 5px 0;
         display: flex;
         align-items: center;
+        @include respond-to(320px){
+          display: none;
+        }
         &-Login {
           background-color: transparent;
           font-family: 'NunitoSans';
@@ -135,6 +160,11 @@
       justify-content: center;
       align-items: center;
       padding-top: 159px;
+      @include respond-to(320px){
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-top: 50px;
+      }
       &-left {
         display: flex;
         flex-direction: column;
@@ -170,12 +200,20 @@
           line-height: 126.9%;
           letter-spacing: 0.02em;
           color: $white-3;
+          margin-top: 20px;
+          @include respond-to(320px){
+            width: 320px;
+            font-size: 32px;
+          }
           &-fig-2 {
             position: absolute;
             width: 40px;
             height: 40px;
             left: 90%;
             top: -10%;
+            @include respond-to(320px){
+              display: none;
+            }
           }
           &-fig-3 {
             position: absolute;
@@ -183,6 +221,9 @@
             height: 35px;
             left: 92%;
             top: 0%;
+            @include respond-to(320px){
+              display: none;
+            }
           }
         }
         &-line {
@@ -191,6 +232,9 @@
           height: 5px;
           border-radius: 30px;
           margin: 40px 0px;
+          @include respond-to(320px){
+            margin: 20px 0px;
+          }
         }
         &-Create {
           position: relative;
@@ -201,6 +245,10 @@
           line-height: 160.4%;
           letter-spacing: 0.02em;
           color: $white-3;
+          @include respond-to(320px){
+            width: 320px;
+            font-size: 30px;
+          }
           &-fig-4{
             position: absolute;
             width: 33px;
@@ -216,15 +264,19 @@
           width: 230px;
           height: 70px;
           margin: 40px 0;
-
           background: $orange-1;
           border-radius: 10px;
-
           font-weight: 600;
           font-size: 26px;
           line-height: 126.9%;
           /* identical to box height, or 33px */
           color: #2C2C2C;
+          @include respond-to(320px){
+            margin: 20px 0;
+            width: 200px;
+            height: 50px;
+            font-size: 22px;
+          }
         }
       }
       &-right{
@@ -250,8 +302,13 @@
         &-lucy {
           display: flex;
           align-items: center;
-          justify-content: space-between;
+          justify-content: center;
           margin-bottom: 22.91px;
+          @include respond-to(320px){
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding-top: 20px;
+          }
           &-avatar {
             position: relative;
             display: flex;
@@ -264,6 +321,9 @@
             box-shadow: 0px 75.0135px 121.897px rgba(0, 0, 0, 0.05);
             border-radius: 50%;
             margin-right: 57.32px;
+            @include respond-to(320px){
+              margin: 0 0 30px 30px;
+            }
           }
           &-fig-5 {
             position: absolute;
@@ -280,6 +340,10 @@
             font-size: 30px;
             line-height: 126.9%;
             color: $gray-3;
+            @include respond-to(320px){
+              left: 9px;
+              top: 213px;
+            }
           }
           &-dash {
             width: 310.6px;
@@ -290,6 +354,11 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          @include respond-to(320px){
+            flex-wrap: wrap-reverse;
+            justify-content: flex-start;
+            padding-top: 20px;
+          }
           &-name {
             width: 91.65px;
             height: 26.19px;
@@ -314,6 +383,9 @@
             background-size: contain;
             box-shadow: 0px 75.0135px 121.897px rgba(0, 0, 0, 0.05);
             border-radius: 50%;
+            @include respond-to(320px){
+              margin-left: 55px;
+            }
           }
         }
         &-comment {
@@ -326,7 +398,11 @@
           background: #FFFFFF;
           box-shadow: 0px 75.0135px 121.897px rgba(0, 0, 0, 0.05);
           border-radius: 18px;
-          margin-right: 61.24px;
+          margin-right: 65px;
+          @include respond-to(320px){
+            width: 300px;
+            padding: 0 10px 0 10px;
+          }
           &-top {
             width: 297.71px;
             height: 50px;
@@ -337,6 +413,9 @@
             font-weight: 700;
             font-size: 18.7534px;
             line-height: 126.9%;
+            @include respond-to(320px){
+              padding: 0 20px 0 20px;
+            }
             &-name {
               align-self: flex-end;
             }
@@ -372,12 +451,19 @@
             font-size: 21.0976px;
             line-height: 126.9%;
             color: #2B3377;
+            @include respond-to(320px){
+              padding: 0 20px 0 20px;
+              font-size: 18px;
+            }
           }
           &-bottom {
             width: 297.71px;
             display: flex;
             align-items: center;
             justify-content: start;
+            @include respond-to(320px){
+              padding: 0 20px 0 20px;
+            }
           }
         }
       }
