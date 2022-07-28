@@ -11,12 +11,22 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @include respond-to(320px){
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
       &-left {
         display: flex;
-        flex-direction: column;
         position: relative;
         margin-right: 100px;
         height: 100%;
+        @include respond-to(320px){
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          margin: 0 0 0 15px;
+        }
         &-line {
           top: 0px;
           left: 0px;
@@ -36,6 +46,10 @@
           /* or 147% */
           letter-spacing: 0.02em;
           color: $gray-4;
+          @include respond-to(320px){
+            font-size: 25px;
+            line-height: 30px;
+          }
         }
       }
       &-right {
@@ -44,6 +58,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include respond-to(320px){
+          flex-direction: column;
+          justify-content: center;
+        }
       }
     }
     &-middle {
@@ -66,6 +84,10 @@
       &-text-2{
         color: $orange-1;
       }
+      @include respond-to(320px){
+        padding: 50px 0 30px 0;
+        font-size: 34px;
+      }
     }
     &-bottom {
       width: 100%;
@@ -73,6 +95,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @include respond-to(320px){
+        flex-wrap: wrap;
+      }
       &-icon-1 {
         display: flex;
         justify-content: center;
@@ -107,6 +132,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @include respond-to(320px){
+          margin: 0 0 30px 0;
+        }
       }
       &-text-1 {
         width: 250px;
@@ -121,6 +149,10 @@
         text-align: center;
         letter-spacing: 0.02em;
         color: $blue-2;
+        @include respond-to(320px){
+          width: 100%;
+          height: 100%;
+        }
       }
       &-text-2 {
         width: 437px;
@@ -134,6 +166,11 @@
         text-align: center;
         letter-spacing: 0.02em;
         color: $gray-5;
+        @include respond-to(320px){
+          width: 100%;
+          height: 100%;
+          padding: 0 20px 0 20px;
+        }
       }
     }
   }
