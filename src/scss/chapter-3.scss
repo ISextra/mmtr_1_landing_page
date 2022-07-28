@@ -20,13 +20,15 @@
       line-height: 147.4%;
       /* identical to box height, or 71px */
       letter-spacing: 0.02em;
-
       &-text-1 {
         color: $gray-5;
       }
-
       &-text-2 {
         color: $orange-1;
+      }
+      @include respond-to(320px){
+        padding: 50px 0 30px 0;
+        font-size: 48px;
       }
     }
     &-bottom {
@@ -36,7 +38,10 @@
       justify-content: center;
       align-items: center;
       padding-bottom: 132px;
-
+      @include respond-to(320px){
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+      }
       &-left {
         width: 678px;
         height: 678px;
@@ -45,7 +50,9 @@
         justify-content: center;
         align-items: center;
         margin-right: 163px;
-
+        @include respond-to(320px){
+          margin-right: 0;
+        }
         &-ellipse-1 {
           display: flex;
           justify-content: center;
@@ -97,12 +104,11 @@
             border-radius: 50%;
           }
         }
-
         &-ellipse-2 {
           position: absolute;
           width: 504px;
           height: 504px;
-          z-index: -1;
+          z-index: -2;
 
           &-icon-1 {
             background: url("../img/chapter-3/icon-3.png");
@@ -110,7 +116,7 @@
             width: 65px;
             height: 65px;
             top: 75%;
-            left: 25%;
+            left: 30%;
           }
 
           &-features-1 {
@@ -156,15 +162,18 @@
           align-items: center;
           width: 678px;
           height: 678px;
-          z-index: -1;
+          z-index: -10;
 
           &-icon-1 {
-            background: url("../img/chapter-3/icon-4.png ");
+            background: url("../img/chapter-3/icon-4.png");
             position: absolute;
             width: 80px;
             height: 80px;
             top: 20%;
             left: 0%;
+            @include respond-to(320px){
+              display: none;
+            }
           }
 
           &-features-1 {
@@ -226,11 +235,14 @@
           width: 206px;
           height: 65px;
           left: 60%;
-          top: 80%;
+          top: 90%;
           background: $white-3;
           /* shdw-01 */
           box-shadow: 4px 5px 20px $gray-7;
           border-radius: 10px;
+          @include respond-to(320px){
+            left: 40%;
+          }
         }
 
         &-boostyourwork-left {
@@ -247,15 +259,19 @@
           color: $blue-5;
         }
       }
-
       &-right {
-        width: 685px;
-        height: 152px;
+        width: 610px;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        @include textblock(610px, 119px, $yellow-1, 685px, 152px);
+        @include textblock(610px, 100%, $yellow-1, 685px, 100%);
+        @include respond-to(320px){
+          @include textblockE(100%, 100%,30px, $yellow-1, 100%, 100%,18px);
+          width: 100%;
+          padding: 20px 20px 0 20px;
+        }
       }
     }
   }
@@ -268,8 +284,8 @@
     z-index: 2;
     width: 314px;
     height: 148px;
-    top: -250%;
-    left: -550%;
+    top: -275%;
+    left: -470%;
     background: $white-3;
     box-shadow: 0px 89.761px 145.862px rgba(0, 0, 0, 0.1);
     border-radius: 19.1456px;
@@ -288,15 +304,15 @@
       &-left {
         background: url("../img/chapter-3/icon-2.png");
         position: relative;
-        width: 51px;
-        height: 51px;
+        width: 56px;
+        height: 56px;
       }
       &-left-point {
         position: absolute;
         width: 14px;
         height: 14px;
-        top: 80%;
-        left: 80%;
+        top: 75%;
+        left: 75%;
         z-index: 3;
         background: $green-4;
         border: 1.5px solid $white-3;
