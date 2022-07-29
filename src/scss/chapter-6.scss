@@ -6,6 +6,10 @@
   align-items: center;
   width: 100%;
   margin-bottom: 150px;
+  @include respond-to(320px){
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+  }
   &__content {
     &-left {
       width: 680px;
@@ -15,24 +19,41 @@
       align-items: center;
       justify-content: center;
       margin-right: 180px;
+      @include respond-to(320px){
+        margin-right: 0;
+        width: 300px;
+        height: 300px;
+        margin-top: 50px;
+      }
       &-Andrea {
         border-radius: 50%;
-        background: url("../img/chapter-6/andrea.png");
         width: 582px;
         height: 582px;
+        @include respond-to(320px){
+          margin-right: 0;
+          width: 280px;
+          height: 280px;
+        }
       }
       &-ellipse-1 {
         position: absolute;
-        background: url("../img/chapter-6/Ellipse 98.png");
         width: 500px;
         height: 500px;
         z-index: 1;
+        @include respond-to(320px){
+          width: 240px;
+          height: 240px;
+        }
       }
       &-ellipse-2 {
         position: absolute;
-        background: url("../img/chapter-6/Ellipse 97.png");
         width: 680px;
         height: 680px;
+        @include respond-to(320px) {
+          width: 300px;
+          height: 300px;
+        }
+
       }
       &-circle-blue {
         position: absolute;
@@ -43,6 +64,10 @@
         left: 12%;
         top: 12%;
         background: $blue-3;
+        @include respond-to(320px) {
+          width: 20px;
+          height: 20px;
+        }
       }
       &-circle-red {
         position: absolute;
@@ -53,6 +78,10 @@
         left: 22%;
         top: 90%;
         background:$red-2;
+        @include respond-to(320px) {
+          width: 12px;
+          height: 12px;
+        }
       }
       &-circle-pink {
         position: absolute;
@@ -63,11 +92,19 @@
         left: 98%;
         top: 50%;
         background:$pink-1;
+        @include respond-to(320px) {
+          width: 12px;
+          height: 12px;
+        }
       }
     }
     &-right {
       align-self: center;
       @include textblock(548px,59px,$yellow-1,676px,190px);
+      @include respond-to(320px){
+        @include textblockE(100%, 100%,30px, $yellow-1, 100%, 100%,18px);
+        padding: 20px 20px 0 20px;
+      }
     }
   }
 }

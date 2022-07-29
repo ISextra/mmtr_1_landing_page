@@ -6,6 +6,9 @@
   align-items: center;
   width: 100%;
   margin: 275px 0 280px 0;
+  @include respond-to(320px){
+    flex-direction: column;
+  }
   &__content {
     &-left {
       display: flex;

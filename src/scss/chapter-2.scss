@@ -62,6 +62,7 @@
         @include respond-to(320px){
           flex-direction: column;
           justify-content: center;
+
         }
       }
     }

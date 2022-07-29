@@ -7,6 +7,9 @@
   width: 100%;
   padding: 169px 0 87px 0;
   background: $white-2;
+  @include respond-to(320px){
+    flex-direction: column;
+  }
   &__content {
     &-left {
       @include textblock(548px,59px,$blue-7,650px,190px);

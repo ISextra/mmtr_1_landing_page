@@ -43,6 +43,9 @@
     align-items: center;
     justify-content: center;
     margin: 65px 0 40px 0;
+    @include respond-to(320px){
+      width: 100%;
+    }
     &-centerelement {
       display: flex;
       align-items: center;
@@ -111,6 +114,9 @@
       width: 1652px;
       height: 695px;
       z-index: -1;
+      @include respond-to(320px){
+        width: 100%;
+      }
     }
     &-ellipse-1 {
       background: url("../img/chapter-9/Ellipse (8).png");
