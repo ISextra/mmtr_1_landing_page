@@ -26,7 +26,7 @@
       &-text-2 {
         color: $orange-1;
       }
-      @include respond-to(320px){
+      @include respond-to(md) {
         padding: 50px 0 30px 0;
         font-size: 34px;
       }
@@ -38,7 +38,7 @@
       justify-content: center;
       align-items: center;
       padding-bottom: 132px;
-      @include respond-to(320px){
+      @include respond-to(md) {
         flex-wrap: wrap;
         padding-bottom: 30px;
       }
@@ -50,7 +50,7 @@
         justify-content: center;
         align-items: center;
         margin-right: 163px;
-        @include respond-to(320px){
+        @include respond-to(md) {
           margin: 50px 0 30px 0;
           width: 300px;
           height: 300px;
@@ -63,7 +63,7 @@
           width: 292px;
           height: 292px;
           z-index: -1;
-          @include respond-to(320px){
+          @include respond-to(md) {
             width: 150px;
             height: 150px;
           }
@@ -74,7 +74,7 @@
             &-img {
               width: 56px;
               height: 56px;
-              @include respond-to(320px){
+              @include respond-to(md) {
                 width: 28px;
                 height: 28px;
               }
@@ -92,7 +92,7 @@
             left: 25%;
             background: $gray-6;
             border-radius: 50%;
-            @include respond-to(320px){
+            @include respond-to(md) {
               width: 40px;
               height: 40px;
               & img{
@@ -128,7 +128,7 @@
           width: 504px;
           height: 504px;
           z-index: -2;
-          @include respond-to(320px){
+          @include respond-to(md) {
             width: 230px;
             height: 230px;
           }
@@ -138,7 +138,7 @@
             height: 65px;
             top: 75%;
             left: 30%;
-            @include respond-to(320px){
+            @include respond-to(md) {
               width: 32px;
               height: 32px;
             }
@@ -155,7 +155,7 @@
             left: 75%;
             background: $white-4;
             border-radius: 50%;
-            @include respond-to(320px){
+            @include respond-to(md) {
               width: 40px;
               height: 40px;
               & img {
@@ -176,7 +176,7 @@
             left: 30%;
             background: $white-4;
             border-radius: 50%;
-            @include respond-to(320px){
+            @include respond-to(md) {
               width: 40px;
               height: 40px;
               & img {
@@ -203,7 +203,7 @@
           width: 678px;
           height: 678px;
           z-index: -10;
-          @include respond-to(320px){
+          @include respond-to(md) {
             width: 300px;
             height: 300px;
           }
@@ -214,7 +214,7 @@
             height: 80px;
             top: 20%;
             left: 0%;
-            @include respond-to(320px){
+            @include respond-to(md) {
               display: none;
             }
           }
@@ -230,7 +230,7 @@
             left: 85%;
             background: $green-3;
             border-radius: 50%;
-            @include respond-to(320px){
+            @include respond-to(md) {
               width: 40px;
               height: 40px;
               & img {
@@ -268,7 +268,7 @@
             top: 50%;
             background: $pink-1;
             border-radius: 50%;
-            @include respond-to(320px){
+            @include respond-to(md) {
               left: 95%;
             }
           }
@@ -277,7 +277,7 @@
           position: absolute;
           width: 96px;
           height: 96px;
-          @include respond-to(320px){
+          @include respond-to(md) {
             width: 48px;
             height: 48px;
           }
@@ -295,7 +295,7 @@
           /* shdw-01 */
           box-shadow: 4px 5px 20px $gray-7;
           border-radius: 10px;
-          @include respond-to(320px){
+          @include respond-to(md) {
             left: 40%;
             width: 103px;
             height: 32px;
@@ -305,7 +305,7 @@
           margin-right: 16.06px;
           width: 49px;
           height: 49px;
-          @include respond-to(320px){
+          @include respond-to(md) {
             margin-right: 8px;
             width: 25px;
             height: 25px
@@ -319,7 +319,7 @@
           line-height: 21px;
           /* identical to box height */
           color: $blue-5;
-          @include respond-to(320px){
+          @include respond-to(md) {
             font-size: 7px;
             line-height: 10px;
           }
@@ -333,7 +333,7 @@
         justify-content: center;
         align-items: flex-start;
         @include textblock(610px, 100%, $yellow-1, 685px, 100%);
-        @include respond-to(320px){
+        @include respond-to(md) {
           @include textblockE(100%, 100%,30px, $yellow-1, 100%, 100%,18px);
           width: 100%;
           padding: 20px 20px 0 20px;
@@ -355,7 +355,7 @@
     background: $white-3;
     box-shadow: 0px 89.761px 145.862px rgba(0, 0, 0, 0.1);
     border-radius: 19.1456px;
-    @include respond-to(320px){
+    @include respond-to(md) {
       top: -425%;
       left: -700%;
       width: 300px;

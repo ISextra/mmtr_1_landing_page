@@ -8,7 +8,7 @@
   width: 100%;
   background: $white-2;
   padding: 97px 0 250px 0;
-  @include respond-to(320px){
+  @include respond-to(md) {
     padding: 0 0 70px 0;
   }
   &__content {
@@ -40,7 +40,7 @@
         text-align: center;
         letter-spacing: 0.02em;
         color: #2D3150;
-        @include respond-to(320px){
+        @include respond-to(md) {
           font-size: 34px;
         }
       }
@@ -65,7 +65,7 @@
       background: $white-3;
       box-shadow: 0px 10px 20px rgba(54, 58, 120, 0.1);
       border-radius: 20px;
-      @include respond-to(320px){
+      @include respond-to(md) {
         justify-content: center;
         width: 90%;
       }
@@ -76,7 +76,7 @@
         width: 100%;
         &-email{
           margin: 0 25px 0 25px;
-          @include respond-to(320px){
+          @include respond-to(md) {
             margin: 0 10px 0 10px;
           }
         }
@@ -111,14 +111,14 @@
         margin-right: 10px;
         text-align: start;
         padding-right: 29px;
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: 100px;
           height: 40px;
           font-size: 15px;
         }
         &-send {
           margin: 0 15px 0 15px;
-          @include respond-to(320px){
+          @include respond-to(md) {
             margin: 0 5px 0 5px;
             width: 15px;
             height: 15px;

@@ -1,12 +1,12 @@
 @import "colors";
 @import "mixin";
-.chapter-1{
+.chapter-1 {
   display: flex;
   flex-direction: column;
   width: 100%;
   background: url("../img/chapter-1/Rectangle 36.png");
   background-repeat: no-repeat;
-  @include respond-to(320px){
+  @include respond-to(md) {
     height: 100%;
     background-repeat: repeat;
   }
@@ -36,9 +36,9 @@
     left: -31px;
     top: 723px;
     z-index: 0;
-    @include respond-to(320px){
+    @include respond-to(md) {
       left: 0;
-      top: 1210px;
+      top: 100%;
     }
   }
   &__img6 {
@@ -48,9 +48,9 @@
     left: -161px;
     top: 856px;
     z-index: 1;
-    @include respond-to(320px){
+    @include respond-to(md) {
       left: 0;
-      top: 1261px;
+      top: 100%;
     }
   }
 
@@ -59,14 +59,14 @@
     flex-direction: column;
     padding: 76px 190px 342px 190px;
     z-index: 2;
-    @include respond-to(320px){
+    @include respond-to(md) {
       padding: 30px 10px 30px 10px;
     }
     &-menu {
       justify-self: flex-start;
       display: flex;
       justify-content: center;
-      @include respond-to(320px){
+      @include respond-to(md) {
         justify-content: space-between;
         margin: 0 10px 0 10px;
       }
@@ -78,7 +78,7 @@
         width: 38px;
         background: $white-3;
         border-radius: 10px;
-        @include respond-to(320px){
+        @include respond-to(md) {
           display: flex;
         }
         &-img {
@@ -112,7 +112,7 @@
       &-row-2 {
         display: flex;
         padding: 0px 225px 0 273px;
-        @include respond-to(320px){
+        @include respond-to(md) {
           display: none;
         }
         &-middle {
@@ -138,7 +138,7 @@
         padding: 5px 0;
         display: flex;
         align-items: center;
-        @include respond-to(320px){
+        @include respond-to(md) {
           display: none;
         }
         &-Login {
@@ -174,7 +174,7 @@
       justify-content: center;
       align-items: center;
       padding-top: 159px;
-      @include respond-to(320px){
+      @include respond-to(md) {
         flex-wrap: wrap;
         justify-content: center;
         padding-top: 50px;
@@ -183,7 +183,7 @@
         display: flex;
         flex-direction: column;
         padding-right: 150px;
-        @include respond-to(320px){
+        @include respond-to(md) {
           padding: 0 0 0 0;
         }
         &-Welcome-to-TeamFlow {
@@ -218,7 +218,7 @@
           letter-spacing: 0.02em;
           color: $white-3;
           margin-top: 20px;
-          @include respond-to(320px){
+          @include respond-to(md) {
             width: 320px;
             font-size: 32px;
           }
@@ -228,7 +228,7 @@
             height: 40px;
             left: 90%;
             top: -10%;
-            @include respond-to(320px){
+            @include respond-to(md) {
               display: none;
             }
           }
@@ -238,7 +238,7 @@
             height: 35px;
             left: 92%;
             top: 0%;
-            @include respond-to(320px){
+            @include respond-to(md) {
               display: none;
             }
           }
@@ -249,7 +249,7 @@
           height: 5px;
           border-radius: 30px;
           margin: 40px 0px;
-          @include respond-to(320px){
+          @include respond-to(md) {
             margin: 20px 0px;
           }
         }
@@ -262,11 +262,11 @@
           line-height: 160.4%;
           letter-spacing: 0.02em;
           color: $white-3;
-          @include respond-to(320px){
+          @include respond-to(md) {
             width: 320px;
             font-size: 30px;
           }
-          &-fig-4{
+          &-fig-4 {
             position: absolute;
             width: 33px;
             height: 33px;
@@ -274,7 +274,7 @@
             top: 80%;
           }
         }
-        &-Get-Started{
+        &-Get-Started {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -288,7 +288,7 @@
           line-height: 126.9%;
           /* identical to box height, or 33px */
           color: #2C2C2C;
-          @include respond-to(320px){
+          @include respond-to(md) {
             align-self: center;
             margin: 20px 0;
             width: 200px;
@@ -300,12 +300,12 @@
       &-right{
         display: flex;
         flex-direction: column;
-        &-avatar-dash{
+        &-avatar-dash {
           position: absolute;
           width: 100%;
           height: 100%;
         }
-        &-addit-name{
+        &-addit-name {
           position: absolute;
           display: flex;
           align-items: center;
@@ -322,7 +322,7 @@
           align-items: center;
           justify-content: center;
           margin-bottom: 22.91px;
-          @include respond-to(320px){
+          @include respond-to(md) {
             flex-direction: column;
             justify-content: space-around;
             padding-top: 20px;
@@ -339,7 +339,7 @@
             box-shadow: 0px 75.0135px 121.897px rgba(0, 0, 0, 0.05);
             border-radius: 50%;
             margin-right: 57.32px;
-            @include respond-to(320px){
+            @include respond-to(md) {
               margin: 0 0 30px 0;
             }
           }
@@ -358,7 +358,7 @@
             font-size: 30px;
             line-height: 126.9%;
             color: $gray-3;
-            @include respond-to(320px){
+            @include respond-to(md) {
               left: 9px;
               top: 213px;
             }
@@ -372,7 +372,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          @include respond-to(320px){
+          @include respond-to(md) {
             flex-direction: column-reverse;
             padding-top: 20px;
           }
@@ -413,7 +413,7 @@
           box-shadow: 0px 75.0135px 121.897px rgba(0, 0, 0, 0.05);
           border-radius: 18px;
           margin-right: 65px;
-          @include respond-to(320px){
+          @include respond-to(md) {
             width: 300px;
             padding: 0 10px 0 10px;
             margin-right: 0;
@@ -428,7 +428,7 @@
             font-weight: 700;
             font-size: 18.7534px;
             line-height: 126.9%;
-            @include respond-to(320px){
+            @include respond-to(md) {
               padding: 0 20px 0 20px;
             }
             &-name {
@@ -466,7 +466,7 @@
             font-size: 21.0976px;
             line-height: 126.9%;
             color: #2B3377;
-            @include respond-to(320px){
+            @include respond-to(md) {
               padding: 0 20px 0 20px;
               font-size: 18px;
             }
@@ -476,7 +476,7 @@
             display: flex;
             align-items: center;
             justify-content: start;
-            @include respond-to(320px){
+            @include respond-to(md) {
               padding: 0 20px 0 20px;
             }
           }

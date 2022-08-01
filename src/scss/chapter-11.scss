@@ -5,7 +5,7 @@
   align-items: start;
   width: 100%;
   padding-bottom: 98px;
-  @include respond-to(320px){
+  @include respond-to(md) {
     flex-direction: column;
     align-items: center;
   }
@@ -16,7 +16,7 @@
       justify-content: start;
       align-items: start;
       padding-right: 156px;
-      @include respond-to(320px){
+      @include respond-to(md) {
         padding-right: 0px;
         align-items: center;
         justify-content: center;
@@ -27,7 +27,7 @@
         justify-content: start;
         align-items: start;
         margin-bottom: 80px;
-        @include respond-to(320px){
+        @include respond-to(md) {
           margin-bottom: 30px;
           align-items: center;
         }
@@ -36,7 +36,7 @@
           align-items: center;
           justify-content: start;
           margin-bottom: 40px;
-          @include respond-to(320px){
+          @include respond-to(md) {
             margin-bottom: 20px;
           }
           &-icon {
@@ -69,7 +69,7 @@
           line-height: 30px;
           /* identical to box height */
           color: $gray-12;
-          @include respond-to(320px){
+          @include respond-to(md) {
             text-align: center;
           }
         }
@@ -80,7 +80,7 @@
         align-items: start;
         justify-content: start;
         margin-bottom: 80px;
-        @include respond-to(320px){
+        @include respond-to(md) {
           margin-bottom: 30px;
           align-items: center;
         }
@@ -102,7 +102,7 @@
           line-height: 30px;
           /* identical to box height */
           color:$gray-12;
-          @include respond-to(320px){
+          @include respond-to(md) {
             text-align: center;
           }
         }
@@ -112,7 +112,7 @@
         flex-direction: column;
         align-items: start;
         justify-content: start;
-        @include respond-to(320px){
+        @include respond-to(md) {
           margin-bottom: 30px;
           align-items: center;
         }
@@ -145,7 +145,7 @@
       display: flex;
       justify-content: center;
       align-items: start;
-      @include respond-to(320px){
+      @include respond-to(md) {
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -160,7 +160,7 @@
         /* identical to box height */
         color: $blue-2;
         margin-bottom: 40px;
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: 100%;
         }
       }
@@ -173,7 +173,7 @@
         /* identical to box height */
         color: $gray-12;
         margin-bottom: 28px;
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: 100%;
         }
       }
@@ -183,13 +183,13 @@
         justify-content: start;
         align-items: start;
         margin-right: 150px;
-        & div:nth-last-child(-n+1){
+        & div:nth-last-child(-n+1) {
           margin-bottom: 0;
         }
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: 100%;
           margin-right: 0px;
-          & div:nth-last-child(-n+1){
+          & div:nth-last-child(-n+1) {
             margin-bottom: 28px;
           }
         }
@@ -200,13 +200,13 @@
         justify-content: start;
         align-items: start;
         margin-right: 150px;
-        & div:nth-last-child(-n+1){
+        & div:nth-last-child(-n+1) {
           margin-bottom: 0;
         }
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: 100%;
           margin-right: 0px;
-          & div:nth-last-child(-n+1){
+          & div:nth-last-child(-n+1) {
             margin-bottom: 28px;
           }
         }
@@ -217,13 +217,13 @@
         justify-content: start;
         align-items: start;
         margin-right: 150px;
-        & div:nth-last-child(-n+1){
+        & div:nth-last-child(-n+1) {
           margin-bottom: 0;
         }
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: 100%;
           margin-right: 0px;
-          & div:nth-last-child(-n+1){
+          & div:nth-last-child(-n+1) {
             margin-bottom: 28px;
           }
         }
@@ -233,12 +233,12 @@
         flex-direction: column;
         justify-content: start;
         align-items: start;
-        & div:nth-last-child(-n+1){
+        & div:nth-last-child(-n+1) {
           margin-bottom: 0;
         }
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: 100%;
-          & div:nth-last-child(-n+1){
+          & div:nth-last-child(-n+1) {
             margin-bottom: 28px;
           }
         }

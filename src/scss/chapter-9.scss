@@ -7,7 +7,7 @@
   align-items: center;
   width: 100%;
   margin-bottom: 149px;
-  @include respond-to(320px){
+  @include respond-to(md) {
     margin-bottom: 70px;
   }
   &__top {
@@ -25,7 +25,7 @@
       text-align: center;
       letter-spacing: 0.02em;
       color: $black-3;
-      @include respond-to(320px){
+      @include respond-to(md) {
         font-size: 34px;
       }
     }
@@ -39,7 +39,7 @@
       text-align: center;
       letter-spacing: 0.02em;
       color: $orange-1;
-      @include respond-to(320px){
+      @include respond-to(md) {
         font-size: 34px;
       }
     }
@@ -52,7 +52,7 @@
     align-items: center;
     justify-content: center;
     margin: 65px 0 40px 0;
-    @include respond-to(320px){
+    @include respond-to(md) {
       width: 100%;
       height: 100%;
     }
@@ -70,7 +70,7 @@
         background: $white-3;
         box-shadow: 0px 89.761px 145.862px rgba(0, 0, 0, 0.05);
         border-radius: 19.1456px;
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: calc(492.43px/2);
           height: 100%;
           box-shadow: 0px 89.761px 145.862px rgba(0, 0, 0, 0.1);
@@ -89,7 +89,7 @@
             line-height: 35px;
             color: $blue-9;
             margin-bottom: 11px;
-            @include respond-to(320px){
+            @include respond-to(md) {
               font-size: 20px;
             }
           }
@@ -104,7 +104,7 @@
             /* or 35px */
             text-align: center;
             color: $blue-8;
-            @include respond-to(320px){
+            @include respond-to(md) {
               width: calc(405.32px/2);
               font-size: 16px;
               height: 100%;
@@ -117,7 +117,7 @@
           height: 100px;
           top: -30%;
           z-index: 1;
-          @include respond-to(320px){
+          @include respond-to(md) {
             width: calc(101.84px/2);
             height: 50px;
           }
@@ -131,7 +131,7 @@
           width: 42px;
           justify-content: space-between;
           align-items: center;
-          @include respond-to(320px){
+          @include respond-to(md) {
             width: 21px;
             height: calc(37px/2);
             & img {
@@ -147,7 +147,7 @@
       width: 1652px;
       height: 695px;
       z-index: -1;
-      @include respond-to(320px){
+      @include respond-to(md) {
         width: 100%;
         height: 100%;
       }
@@ -159,7 +159,7 @@
       position: absolute;
       left: 35%;
       top: 80%;
-      @include respond-to(320px){
+      @include respond-to(md) {
         display: none;
       }
     }
@@ -170,7 +170,7 @@
       height: 148px;
       left: 22%;
       top: 50%;
-      @include respond-to(320px){
+      @include respond-to(md) {
         display: none;
       }
     }
@@ -181,7 +181,7 @@
       height: 113px;
       left: 30%;
       top: 16%;
-      @include respond-to(320px){
+      @include respond-to(md) {
         display: none;
       }
     }
@@ -192,7 +192,7 @@
       height: 113px;
       left: 70%;
       top: 16%;
-      @include respond-to(320px){
+      @include respond-to(md) {
         display: none;
       }
     }
@@ -203,7 +203,7 @@
       height: 148px;
       left: 80%;
       top: 50%;
-      @include respond-to(320px){
+      @include respond-to(md) {
         display: none;
       }
     }
@@ -214,7 +214,7 @@
       height: 134px;
       left: 60%;
       top: 80%;
-      @include respond-to(320px){
+      @include respond-to(md) {
         display: none;
       }
     }

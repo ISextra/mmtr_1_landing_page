@@ -7,7 +7,7 @@
   width: 100%;
   height: 100%;
   background: $white-2;
-  @include respond-to(320px){
+  @include respond-to(md) {
     flex-direction: column;
   }
   &__content {
@@ -15,7 +15,7 @@
       align-self: center;
       margin-right: 110px;
       @include textblock(347px,59px,$yellow-1,672px,190px);
-      @include respond-to(320px){
+      @include respond-to(md) {
         width: 100%;
         margin-right: 0;
         @include textblockE(100%, 50px,30px, $yellow-1, 100%, 100%,18px);
@@ -30,7 +30,7 @@
       justify-content: center;
       align-items: center;
       position: relative;
-      @include respond-to(320px){
+      @include respond-to(md) {
         width: 300px;
         height: 300px;
         align-self: center;
@@ -44,7 +44,7 @@
         top:25%;
         border-radius: 50%;
         background: $purple-1;
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: 150px;
           height: 150px;
           left: 45%;
@@ -84,7 +84,7 @@
         width: 662px;
         height: 658px;
         z-index: 1;
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: 300px;
           height: 300px;
         }
@@ -101,7 +101,7 @@
         background: $white-3;
         box-shadow: 0px 89.761px 145.862px rgba(0, 0, 0, 0.05);
         border-radius: 19.1456px;
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: 70px;
           height: 70px;
           left: 5%;
@@ -113,7 +113,7 @@
         height: 103px;
         left: 85%;
         top: 5%;
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: 60px;
           height: 60px;
           left: 75%;

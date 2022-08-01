@@ -7,7 +7,7 @@
   width: 100%;
   padding: 169px 0 87px 0;
   background: $white-2;
-  @include respond-to(320px){
+  @include respond-to(md) {
     flex-direction: column;
     padding: 50px 0 30px 0;
   }
@@ -15,7 +15,7 @@
     &-left {
       @include textblock(548px,59px,$blue-7,650px,190px);
       padding-right: 300px;
-      @include respond-to(320px){
+      @include respond-to(md) {
         @include textblockE(100%, 100%,30px, $yellow-1, 100%, 100%,18px);
         padding: 0 20px 0 20px;
       }
@@ -27,7 +27,7 @@
       justify-content: center;
       width: 580px;
       height: 580px;
-      @include respond-to(320px){
+      @include respond-to(md) {
         margin-top: 50px;
         width: 290px;
         height: 290px;
@@ -38,7 +38,7 @@
         height: 440px;
         border-radius: 50%;
         border: 3px dashed $white-7;
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: 220px;
           height: 220px;
         }
@@ -50,7 +50,7 @@
         height: 580px;
         border-radius: 50%;
         border: 3px dashed $white-7;
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: 290px;
           height: 290px;
         }
@@ -66,7 +66,7 @@
         left: -5%;
         top: 15%;
         background: $yellow-1;
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: 90px;
           height: 90px;
         }
@@ -78,7 +78,7 @@
           top: 20%;
           border-radius: 50%;
           background: $gray-10;
-          @include respond-to(320px){
+          @include respond-to(md) {
             width: 21px;
             height: 21px;
           }
@@ -92,7 +92,7 @@
           z-index: 1;
           border-radius: 50%;
           background: $gray-10;
-          @include respond-to(320px){
+          @include respond-to(md) {
             width: 7px;
             height: 7px;
           }
@@ -109,7 +109,7 @@
         left: 60%;
         top: 60%;
         background: $red-1;
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: 100px;
           height: 100px;
         }
@@ -122,7 +122,7 @@
           z-index: 1;
           border-radius: 50%;
           background: $red-3;
-          @include respond-to(320px){
+          @include respond-to(md) {
             width: 26px;
             height: 26px;
           }
@@ -136,7 +136,7 @@
           z-index: 1;
           border-radius: 50%;
           background: $red-3;
-          @include respond-to(320px){
+          @include respond-to(md) {
             width: 9px;
             height: 9px;
           }
@@ -153,7 +153,7 @@
         left: 60%;
         top: -15%;
         background: $blue-1;
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: 110px;
           height: 110px;
         }
@@ -166,7 +166,7 @@
           z-index: 1;
           border-radius: 50%;
           background: $gray-10;
-          @include respond-to(320px){
+          @include respond-to(md) {
             width: 15px;
             height: 15px;
           }
@@ -179,7 +179,7 @@
           top: 25%;
           border-radius: 50%;
           background: $gray-10;
-          @include respond-to(320px){
+          @include respond-to(md) {
             width: 10px;
             height: 10px;
           }
@@ -192,7 +192,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        @include respond-to(320px){
+        @include respond-to(md) {
           &-calendar {
             width: 25px;
             height: 25px;
@@ -220,7 +220,7 @@
           /* or 32px */
           letter-spacing: 0.02em;
           color: $white-3;
-          @include respond-to(320px){
+          @include respond-to(md) {
             margin-top: 8px;
             font-size:11px;
             width: 49px;
@@ -237,7 +237,7 @@
           top: 80%;
           border-radius: 50%;
           background: $blue-4;
-          @include respond-to(320px){
+          @include respond-to(md) {
             width: 25px;
             height: 25px;
           }
@@ -250,7 +250,7 @@
           top: -5%;
           border-radius: 50%;
           background: $red-2;
-          @include respond-to(320px){
+          @include respond-to(md) {
             width: 12px;
             height: 12px;
           }
@@ -263,7 +263,7 @@
           top: 45%;
           border-radius: 50%;
           background: $green-2;
-          @include respond-to(320px){
+          @include respond-to(md) {
             width: 15px;
             height: 15px;
           }

@@ -1,12 +1,12 @@
 @import "colors";
 @import "mixin";
-.chapter-8{
+.chapter-8 {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   margin: 275px 0 280px 0;
-  @include respond-to(320px){
+  @include respond-to(md) {
     flex-direction: column;
     margin: 50px 0 50px 0;
   }
@@ -17,13 +17,13 @@
       align-items: center;
       position: relative;
       margin-right: 270px;
-      @include respond-to(320px){
+      @include respond-to(md) {
         margin-right: 0;
       }
       &-fennimore {
         width: 478px;
         height: 589px;
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: calc(478px/2);
           height: calc(589px/2);
         }
@@ -36,7 +36,7 @@
         top: -2%;
         z-index: -1;
         background: $blue-1;
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: calc(247.28px/2);
           height: calc(428.12px/2);
         }
@@ -49,7 +49,7 @@
         top: 60%;
         z-index: -1;
         background: $yellow-1;
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: 52px;
           height: 80px;
         }
@@ -65,7 +65,7 @@
         align-items: center;
         justify-content: center;
         z-index: 1;
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: 220px;
           height: 115px;
           left: 10%;
@@ -80,7 +80,7 @@
           background: $white-3;
           box-shadow: 0px 89.761px 145.862px rgba(0, 0, 0, 0.05);
           border-radius: 19.1456px;
-          @include respond-to(320px){
+          @include respond-to(md) {
             width: 220px;
             height: 100px;
           }
@@ -95,7 +95,7 @@
             /* or 32px */
             letter-spacing: 0.02em;
             color:$blue-8;
-            @include respond-to(320px){
+            @include respond-to(md) {
               width: calc(348.22px/2);
               height: calc(115px/2);
               font-size: 11px;
@@ -106,7 +106,7 @@
             align-items: center;
             justify-content: space-between;
             width: 348.22px;
-            @include respond-to(320px){
+            @include respond-to(md) {
               width: calc(348.22px/2);
             }
             &-left {
@@ -118,7 +118,7 @@
               /* identical to box height, or 32px */
               letter-spacing: 0.02em;
               color: #2D3150;
-              @include respond-to(320px){
+              @include respond-to(md) {
                 font-size: 10px;
               }
             }
@@ -131,7 +131,7 @@
               /* identical to box height, or 32px */
               letter-spacing: 0.02em;
               color: $blue-9;
-              @include respond-to(320px){
+              @include respond-to(md) {
                 font-size: 10px;
               }
             }
@@ -156,7 +156,7 @@
             justify-content: center;
             align-items: center;
           }
-          &-bottom{
+          &-bottom {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -174,7 +174,7 @@
     }
     &-right {
       @include textblock(548px,59px,$orange-1,650px,190px);
-      @include respond-to(320px){
+      @include respond-to(md) {
         @include textblockE(100%, 100%,30px, $yellow-1, 100%, 100%,18px);
         padding: 120px 20px 0 20px;
       }
@@ -187,7 +187,7 @@
         background: $yellow-1;
         border-radius: 10px;
         margin-top: 32px;
-        @include respond-to(320px){
+        @include respond-to(md) {
           width: 180px;
           height: 50px;
           margin-top: 20px;
@@ -201,7 +201,7 @@
           line-height: 126.9%;
           /* identical to box height, or 33px */
           color:$black-2;
-          @include respond-to(320px){
+          @include respond-to(md) {
             font-size: 20px;
           }
         }
