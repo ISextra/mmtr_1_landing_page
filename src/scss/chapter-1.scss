@@ -38,7 +38,7 @@
     z-index: 0;
     @include respond-to(md) {
       left: 0;
-      top: 100%;
+      top: 1197px;
     }
   }
   &__img6 {
@@ -50,7 +50,7 @@
     z-index: 1;
     @include respond-to(md) {
       left: 0;
-      top: 100%;
+      top: 1314px;
     }
   }
 
@@ -175,6 +175,11 @@
       align-items: center;
       padding-top: 159px;
       @include respond-to(md) {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 50px;
+      }
+      @include respond-to(xl) {
         flex-wrap: wrap;
         justify-content: center;
         padding-top: 50px;
