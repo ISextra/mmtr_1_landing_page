@@ -10,6 +10,10 @@
     height: 100%;
     background-repeat: repeat;
   }
+  @include respond-to(xl) {
+    height: 100%;
+    background-repeat: repeat-y;
+  }
   &__img2 {
     position: absolute;
     width: 100%;
@@ -40,6 +44,10 @@
       left: 0;
       top: 1197px;
     }
+    @include respond-to(xl) {
+      left: 0;
+      top: 1120px;
+    }
   }
   &__img6 {
     position: absolute;
@@ -50,7 +58,11 @@
     z-index: 1;
     @include respond-to(md) {
       left: 0;
-      top: 1314px;
+      top: 100%;
+    }
+    @include respond-to(xl) {
+      left: 0;
+      top: 100%;
     }
   }
 
@@ -62,12 +74,19 @@
     @include respond-to(md) {
       padding: 30px 10px 30px 10px;
     }
+    @include respond-to(xl) {
+      padding: 30px 10px 30px 10px;
+    }
     &-menu {
       justify-self: flex-start;
       display: flex;
       justify-content: center;
       @include respond-to(md) {
         justify-content: space-between;
+        margin: 0 10px 0 10px;
+      }
+      @include respond-to(xl) {
+        flex-direction: column;
         margin: 0 10px 0 10px;
       }
       &-burger {
@@ -90,6 +109,9 @@
       &-row-1 {
         display: flex;
         align-items: center;
+        @include respond-to(xl) {
+          justify-content: center;
+        }
         &-icon {
           background-color: $orange-1;
           cursor: default;
@@ -114,6 +136,10 @@
         padding: 0px 225px 0 273px;
         @include respond-to(md) {
           display: none;
+        }
+        @include respond-to(xl) {
+          justify-content: center;
+          padding: 20px 0 20px 0;
         }
         &-middle {
           display: flex;
@@ -141,6 +167,9 @@
         @include respond-to(md) {
           display: none;
         }
+        @include respond-to(xl) {
+          justify-content: end;
+        }
         &-Login {
           background-color: transparent;
           font-family: 'NunitoSans';
@@ -149,6 +178,9 @@
           font-size: 24px;
           line-height: 126.9%;
           color: $gray-1;
+          @include respond-to(xl) {
+            color: $white-3;
+          }
         }
         &-SingUp {
           top:50%;
@@ -180,7 +212,7 @@
         padding-top: 50px;
       }
       @include respond-to(xl) {
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         padding-top: 50px;
       }
@@ -189,6 +221,9 @@
         flex-direction: column;
         padding-right: 150px;
         @include respond-to(md) {
+          padding: 0 0 0 0;
+        }
+        @include respond-to(xl) {
           padding: 0 0 0 0;
         }
         &-Welcome-to-TeamFlow {
@@ -332,6 +367,9 @@
             justify-content: space-around;
             padding-top: 20px;
           }
+          @include respond-to(xl) {
+            margin-left: 22.91px;
+          }
           &-avatar {
             position: relative;
             display: flex;
@@ -364,6 +402,10 @@
             line-height: 126.9%;
             color: $gray-3;
             @include respond-to(md) {
+              left: 9px;
+              top: 213px;
+            }
+            @include respond-to(xl) {
               left: 9px;
               top: 213px;
             }
@@ -421,6 +463,9 @@
           @include respond-to(md) {
             width: 300px;
             padding: 0 10px 0 10px;
+            margin-right: 0;
+          }
+          @include respond-to(xl) {
             margin-right: 0;
           }
           &-top {
