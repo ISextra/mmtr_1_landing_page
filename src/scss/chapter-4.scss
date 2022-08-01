@@ -114,11 +114,13 @@
         left: 85%;
         top: 5%;
         @include respond-to(320px){
-          & img{
+          width: 60px;
+          height: 60px;
+          left: 75%;
+          & img {
             width: 60px;
             height: 60px;
           }
-          left: 75%;
         }
       }
     }

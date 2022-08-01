@@ -202,7 +202,7 @@
           /* identical to box height, or 33px */
           color:$black-2;
           @include respond-to(320px){
-            font-size: calc(26px/2);
+            font-size: 20px;
           }
         }
       }

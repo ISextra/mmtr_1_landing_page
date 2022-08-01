@@ -268,6 +268,9 @@
             top: 50%;
             background: $pink-1;
             border-radius: 50%;
+            @include respond-to(320px){
+              left: 95%;
+            }
           }
         }
         &-icon-1 {

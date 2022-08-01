@@ -7,8 +7,10 @@
   align-items: center;
   width: 100%;
   background: $white-2;
-  padding: 97px 0 100px 0;
-  margin-bottom: 150px;
+  padding: 97px 0 250px 0;
+  @include respond-to(320px){
+    padding: 0 0 70px 0;
+  }
   &__content {
     &-top {
       display: flex;
@@ -16,7 +18,6 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 54px;
-
       &-support {
         font-family: 'NunitoSans';
         font-style: normal;
@@ -39,6 +40,9 @@
         text-align: center;
         letter-spacing: 0.02em;
         color: #2D3150;
+        @include respond-to(320px){
+          font-size: 34px;
+        }
       }
       &-company {
         font-family: 'NunitoSans';
@@ -61,26 +65,32 @@
       background: $white-3;
       box-shadow: 0px 10px 20px rgba(54, 58, 120, 0.1);
       border-radius: 20px;
+      @include respond-to(320px){
+        justify-content: center;
+        width: 90%;
+      }
       &-left {
         display: flex;
         justify-content: start;
         align-items: center;
-        font-family: 'NunitoSans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 147.4%;
-        /* or 29px */
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: $gray-11;
         width: 100%;
         &-email{
           margin: 0 25px 0 25px;
+          @include respond-to(320px){
+            margin: 0 10px 0 10px;
+          }
         }
         &-text {
           width: 100%;
           text-align: start;
+          font-family: 'NunitoSans';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 147.4%;
+          /* or 29px */
+          letter-spacing: 0.02em;
+          color: $gray-11;
         }
       }
       &-right {
@@ -99,11 +109,21 @@
         /* or 25px */
         color: $white-3;
         margin-right: 10px;
-        &-send {
-          margin: 0 15px 0 15px;
-        }
         text-align: start;
         padding-right: 29px;
+        @include respond-to(320px){
+          width: 100px;
+          height: 40px;
+          font-size: 15px;
+        }
+        &-send {
+          margin: 0 15px 0 15px;
+          @include respond-to(320px){
+            margin: 0 5px 0 5px;
+            width: 15px;
+            height: 15px;
+          }
+        }
       }
     }
   }
