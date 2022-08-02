@@ -10,6 +10,10 @@
     flex-direction: column;
     margin: 50px 0 50px 0;
   }
+  @include respond-to(xl) {
+    flex-direction: column-reverse;
+    margin: 50px 0 50px 0;
+  }
   &__content {
     &-left {
       display: flex;
@@ -19,6 +23,9 @@
       margin-right: 270px;
       @include respond-to(md) {
         margin-right: 0;
+      }
+      @include respond-to(xl) {
+        margin: 50px 0 100px 0;
       }
       &-fennimore {
         width: 478px;

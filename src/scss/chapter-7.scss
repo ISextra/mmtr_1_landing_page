@@ -11,12 +11,20 @@
     flex-direction: column;
     padding: 50px 0 30px 0;
   }
+  @include respond-to(xl) {
+    flex-direction: column;
+    padding: 50px 0 30px 0;
+  }
   &__content {
     &-left {
       @include textblock(548px,59px,$blue-7,650px,190px);
       padding-right: 300px;
       @include respond-to(md) {
         @include textblockE(100%, 100%,30px, $yellow-1, 100%, 100%,18px);
+        padding: 0 20px 0 20px;
+      }
+      @include respond-to(xl) {
+        @include textblock(548px,100%,$blue-7,650px,100%);
         padding: 0 20px 0 20px;
       }
     }
@@ -31,6 +39,9 @@
         margin-top: 50px;
         width: 290px;
         height: 290px;
+      }
+      @include respond-to(xl) {
+        margin-top: 150px;
       }
       &-ellipse-small {
         box-sizing: border-box;

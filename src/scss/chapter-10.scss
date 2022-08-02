@@ -11,6 +11,9 @@
   @include respond-to(md) {
     padding: 0 0 70px 0;
   }
+  @include respond-to(xl) {
+    padding: 0 0 70px 0;
+  }
   &__content {
     &-top {
       display: flex;

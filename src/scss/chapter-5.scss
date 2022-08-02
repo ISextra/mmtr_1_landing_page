@@ -20,6 +20,13 @@
       padding: 70px 20px 50px 20px;
       flex-direction: column;
     }
+    @include respond-to(xl) {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 70px 20px 50px 20px;
+      flex-direction: column;
+    }
     &-text-1 {
       font-family: 'NunitoSans';
       font-style: normal;
@@ -33,6 +40,10 @@
       @include respond-to(md) {
         width: 100%;
         font-size: 34px;
+        text-align: center;
+      }
+      @include respond-to(xl) {
+        width: 100%;
         text-align: center;
       }
     }
@@ -51,6 +62,10 @@
         font-size:28px;
         text-align: center;
       }
+      @include respond-to(xl) {
+        width: 100%;
+        text-align: center;
+      }
     }
   }
   &__middle {
@@ -63,6 +78,9 @@
     @include respond-to(md) {
       flex-direction: column;
     }
+    @include respond-to(xl) {
+      flex-direction: column;
+    }
     &-img {
       box-shadow: 0px 89.761px 145.862px rgba(0, 0, 0, 0.1);
       margin-right: 100px;
@@ -70,6 +88,9 @@
         margin-right: 0px;
         width: 120px;
         height: 120px;
+      }
+      @include respond-to(xl) {
+        margin-right: 0px;
       }
     }
     & img:nth-child(5) {
@@ -96,6 +117,9 @@
     align-items: center;
     margin: 100px 0 210px 0;
     @include respond-to(md) {
+      margin: 50px 0 70px 0;
+    }
+    @include respond-to(xl) {
       margin: 50px 0 70px 0;
     }
     &-view-all {

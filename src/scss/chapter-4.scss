@@ -10,6 +10,9 @@
   @include respond-to(md) {
     flex-direction: column;
   }
+  @include respond-to(xl) {
+    flex-direction: column;
+  }
   &__content {
     &-left {
       align-self: center;
@@ -20,6 +23,10 @@
         margin-right: 0;
         @include textblockE(100%, 50px,30px, $yellow-1, 100%, 100%,18px);
         padding: 20px 20px 0 20px;
+      }
+      @include respond-to(xl) {
+        width: 610px;
+        margin-right: 0;
       }
     }
     &-right {
@@ -33,6 +40,10 @@
       @include respond-to(md) {
         width: 300px;
         height: 300px;
+        align-self: center;
+        margin-top: 50px;
+      }
+      @include respond-to(xl) {
         align-self: center;
         margin-top: 50px;
       }
