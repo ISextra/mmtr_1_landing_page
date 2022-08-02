@@ -91,6 +91,8 @@
       }
       @include respond-to(xl) {
         margin-right: 0px;
+        width: 250px;
+        height: 250px;
       }
     }
     & img:nth-child(5) {
