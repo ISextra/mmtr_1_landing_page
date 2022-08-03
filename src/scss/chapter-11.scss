@@ -156,7 +156,7 @@
           display: flex;
           align-items: start;
           justify-content: start;
-          & img:nth-child(4)
+          & img:nth-last-child(-n+1)
           {
             margin-right: 0;
           }

@@ -95,7 +95,7 @@
         height: 250px;
       }
     }
-    & img:nth-child(5) {
+    & img:nth-last-child(-n+1) {
       margin-right: 0px;
     }
 

@@ -86,7 +86,8 @@
         margin: 0 10px 0 10px;
       }
       @include respond-to(xl) {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
         margin: 0 10px 0 10px;
       }
       &-burger {
@@ -134,6 +135,9 @@
       &-row-2 {
         display: flex;
         padding: 0px 225px 0 273px;
+        & div:nth-last-child(-n+1) {
+          margin: 0;
+        }
         @include respond-to(md) {
           display: none;
         }
