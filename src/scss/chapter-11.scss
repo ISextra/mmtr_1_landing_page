@@ -156,12 +156,11 @@
           display: flex;
           align-items: start;
           justify-content: start;
-          & img:nth-last-child(-n+1)
-          {
-            margin-right: 0;
-          }
-          &-img {
+          & a{
             margin-right: 22px;
+            &:nth-last-child(-n+1) {
+              margin-right: 0;
+            }
           }
         }
       }
