@@ -1,0 +1,134 @@
+@import "colors";
+.chapter-10 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: $white-2;
+  padding: 97px 0 250px 0;
+  @include respond-to(md) {
+    padding: 0 0 70px 0;
+  }
+  @include respond-to(xl) {
+    padding: 0 0 70px 0;
+  }
+  &__content {
+    &-top {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 54px;
+      &-support {
+        font-family: 'NunitoSans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 147.4%;
+        /* or 35px */
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: $orange-2;
+        margin-bottom: 16px;
+      }
+      &-subscribe {
+        font-family: 'NunitoSans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 147.4%;
+        /* identical to box height, or 59px */
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #2D3150;
+        @include respond-to(md) {
+          font-size: 34px;
+        }
+      }
+      &-company {
+        font-family: 'NunitoSans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 147.4%;
+        /* identical to box height, or 53px */
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #2D3150;
+      }
+    }
+    &-bottom {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      width: 640px;
+      height: 72px;
+      background: $white-3;
+      box-shadow: 0px 10px 20px rgba(54, 58, 120, 0.1);
+      border-radius: 20px;
+      @include respond-to(md) {
+        justify-content: center;
+        width: 90%;
+      }
+      &-left {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        &-email{
+          margin: 0 25px 0 25px;
+          @include respond-to(md) {
+            margin: 0 10px 0 10px;
+          }
+        }
+        &-text {
+          width: 100%;
+          text-align: start;
+          font-family: 'NunitoSans';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 147.4%;
+          /* or 29px */
+          letter-spacing: 0.02em;
+          color: $gray-11;
+        }
+      }
+      &-right {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 180px;
+        height: 58px;
+        background: $blue-7;
+        border-radius: 20px;
+        font-family: 'NunitoSans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 126.9%;
+        /* or 25px */
+        color: $white-3;
+        margin-right: 10px;
+        text-align: start;
+        padding-right: 29px;
+        @include respond-to(md) {
+          width: 100px;
+          height: 40px;
+          font-size: 15px;
+        }
+        &-send {
+          margin: 0 15px 0 15px;
+          @include respond-to(md) {
+            margin: 0 5px 0 5px;
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+

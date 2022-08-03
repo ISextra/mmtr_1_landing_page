@@ -1,0 +1,311 @@
+@import "colors";
+.chapter-11 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  padding-bottom: 98px;
+  @include respond-to(md) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @include respond-to(xl) {
+    flex-direction: column;
+    align-items: center;
+  }
+  &__content {
+    &-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      padding-right: 156px;
+      @include respond-to(md) {
+        padding-right: 0px;
+        align-items: center;
+        justify-content: center;
+      }
+      @include respond-to(xl) {
+        padding-right: 0px;
+        align-items: center;
+        justify-content: center;
+      }
+      &-teamflow {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-bottom: 80px;
+        @include respond-to(md) {
+          margin-bottom: 30px;
+          align-items: center;
+        }
+        @include respond-to(xl) {
+          margin-bottom: 30px;
+          align-items: center;
+        }
+        &-top {
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          margin-bottom: 40px;
+          @include respond-to(md) {
+            margin-bottom: 20px;
+          }
+          &-icon {
+            margin-right: 10px;
+          }
+          &-text-1 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 45px;
+            /* identical to box height */
+            color: $blue-10;
+          }
+          &-text-2 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 45px;
+            /* identical to box height */
+            color: $red-4;
+          }
+        }
+        &-bottom {
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          /* identical to box height */
+          color: $gray-12;
+          @include respond-to(md) {
+            text-align: center;
+          }
+        }
+      }
+      &-address {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        margin-bottom: 80px;
+        @include respond-to(md) {
+          margin-bottom: 30px;
+          align-items: center;
+        }
+        @include respond-to(xl) {
+          margin-bottom: 30px;
+          align-items: center;
+        }
+        &-top {
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 33px;
+          /* identical to box height */
+          color: $blue-2;
+          margin-bottom: 16px;
+        }
+        &-bottom {
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          /* identical to box height */
+          color:$gray-12;
+          @include respond-to(md) {
+            text-align: center;
+          }
+          @include respond-to(xl) {
+            text-align: center;
+          }
+        }
+      }
+      &-social {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        @include respond-to(md) {
+          margin-bottom: 30px;
+          align-items: center;
+        }
+        @include respond-to(xl) {
+          margin-bottom: 30px;
+          align-items: center;
+        }
+        &-top {
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 33px;
+          /* identical to box height */
+          color:$blue-2;
+          margin-bottom: 16px;
+        }
+        &-bottom {
+          display: flex;
+          align-items: start;
+          justify-content: start;
+          & img:nth-child(4)
+          {
+            margin-right: 0;
+          }
+          &-img {
+            margin-right: 22px;
+          }
+        }
+      }
+    }
+    &-right {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      @include respond-to(md) {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+      }
+      @include respond-to(xl) {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+      }
+      &-top {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 33px;
+        /* identical to box height */
+        color: $blue-2;
+        margin-bottom: 40px;
+        @include respond-to(md) {
+          width: 100%;
+        }
+        @include respond-to(xl) {
+          width: 100%;
+        }
+      }
+      &-undertop {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        /* identical to box height */
+        color: $gray-12;
+        margin-bottom: 28px;
+        @include respond-to(md) {
+          width: 100%;
+        }
+        @include respond-to(xl) {
+          width: 100%;
+        }
+      }
+      &-product {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-right: 150px;
+        & div:nth-last-child(-n+1) {
+          margin-bottom: 0;
+        }
+        @include respond-to(md) {
+          width: 100%;
+          margin-right: 0px;
+          & div:nth-last-child(-n+1) {
+            margin-bottom: 28px;
+          }
+        }
+        @include respond-to(xl) {
+          width: 100%;
+          margin-right: 0px;
+          & div:nth-last-child(-n+1) {
+            margin-bottom: 28px;
+          }
+        }
+      }
+      &-team {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-right: 150px;
+        & div:nth-last-child(-n+1) {
+          margin-bottom: 0;
+        }
+        @include respond-to(md) {
+          width: 100%;
+          margin-right: 0px;
+          & div:nth-last-child(-n+1) {
+            margin-bottom: 28px;
+          }
+        }
+        @include respond-to(xl) {
+          width: 100%;
+          margin-right: 0px;
+          & div:nth-last-child(-n+1) {
+            margin-bottom: 28px;
+          }
+        }
+      }
+      &-solutions {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-right: 150px;
+        & div:nth-last-child(-n+1) {
+          margin-bottom: 0;
+        }
+        @include respond-to(md) {
+          width: 100%;
+          margin-right: 0px;
+          & div:nth-last-child(-n+1) {
+            margin-bottom: 28px;
+          }
+        }
+        @include respond-to(xl) {
+          width: 100%;
+          margin-right: 0px;
+          & div:nth-last-child(-n+1) {
+            margin-bottom: 28px;
+          }
+        }
+      }
+      &-resources {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        & div:nth-last-child(-n+1) {
+          margin-bottom: 0;
+        }
+        @include respond-to(md) {
+          width: 100%;
+          & div:nth-last-child(-n+1) {
+            margin-bottom: 28px;
+          }
+        }
+        @include respond-to(xl) {
+          width: 100%;
+          & div:nth-last-child(-n+1) {
+            margin-bottom: 28px;
+          }
+        }
+      }
+    }
+  }
+}

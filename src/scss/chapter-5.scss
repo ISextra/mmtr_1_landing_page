@@ -1,89 +1,167 @@
+@import "colors";
+@import "mixin";
 .chapter-5{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 10%;
-}
-
-.chapter-5__content{
-  height: 80%;
-  width: 90%;
-
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.chapter-5__top{
-  width: 775px;
-  height: 142px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-.chapter-5__top_text-1{
-  font-family: 'NunitoSans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 147.4%;
-  /* or 71px */
-  text-align: center;
-  letter-spacing: 0.02em;
-
-  color: #FFCA1D;
-}
-.chapter-5__top_text-2{
-  font-family: 'NunitoSans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 147.4%;
-  /* or 71px */
-  text-align: start;
-  letter-spacing: 0.02em;
-
-  color: #565656;
-}
-
-.chapter-5__middle{
   width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.chapter-5__middle_img{
-  box-shadow: 0px 89.761px 145.862px rgba(0, 0, 0, 0.1);
-}
-.chapter-5__bottom{
-  width: 100%;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &__top {
+    width: 775px;
+    height: 142px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 265px 0 100px 0;
+    @include respond-to(md) {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 70px 20px 50px 20px;
+      flex-direction: column;
+    }
+    @include respond-to(xl) {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 70px 20px 50px 20px;
+      flex-direction: column;
+    }
+    &-text-1 {
+      font-family: 'NunitoSans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 147.4%;
+      /* or 71px */
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: $orange-1;
+      @include respond-to(md) {
+        width: 100%;
+        font-size: 34px;
+        text-align: center;
+      }
+      @include respond-to(xl) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    &-text-2 {
+      font-family: 'NunitoSans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 147.4%;
+      /* or 71px */
+      text-align: start;
+      letter-spacing: 0.02em;
+      color: $gray-5;
+      @include respond-to(md) {
+        width: 100%;
+        font-size:28px;
+        text-align: center;
+      }
+      @include respond-to(xl) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  &__middle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    @include respond-to(md) {
+      flex-direction: column;
+    }
+    @include respond-to(xl) {
+      flex-direction: column;
+    }
+    &-img {
+      box-shadow: 0px 89.761px 145.862px rgba(0, 0, 0, 0.1);
+      margin-right: 100px;
+      @include respond-to(md) {
+        margin-right: 0px;
+        width: 120px;
+        height: 120px;
+      }
+      @include respond-to(xl) {
+        margin-right: 0px;
+        width: 250px;
+        height: 250px;
+      }
+    }
+    & img:nth-child(5) {
+      margin-right: 0px;
+    }
 
-}
-.chapter-5__bottom_View-All{
-  width: 230px;
-  height: 70px;
-
-  background: #FFCA1D;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-.chapter-5__bottom_View-All_text{
-  font-family: 'NunitoSans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 126.9%;
-  /* identical to box height, or 33px */
-
-  color: #2C2C2C;
+    &-circle {
+      position: absolute;
+      z-index: 1;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      left: 10%;
+      top: 20%;
+      background: $blue-5;
+    }
+  }
+  &__bottom {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 210px 0;
+    @include respond-to(md) {
+      margin: 50px 0 70px 0;
+    }
+    @include respond-to(xl) {
+      margin: 50px 0 70px 0;
+    }
+    &-view-all {
+      width: 230px;
+      height: 70px;
+      background: $orange-1;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include respond-to(md) {
+        font-size: 20px;
+        width: 150px;
+        height: 50px;
+      }
+      &-text {
+        font-family: 'NunitoSans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 126.9%;
+        /* identical to box height, or 33px */
+        color: $black-2;
+        @include respond-to(md) {
+          font-size: 20px;
+        }
+      }
+    }
+    &-circle {
+      position: absolute;
+      z-index: 1;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      left: 70%;
+      top: 50%;
+      background: $blue-5;
+      @include respond-to(md) {
+        margin: 50px 0 70px 0;
+      }
+    }
+  }
 }
